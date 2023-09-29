@@ -1,0 +1,100 @@
+#head{
+    overflow: hidden;
+    margin-top: 4%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 0px solid;
+    border-radius:  12px 12px 12px 12px;
+}
+.card-title{
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 500;
+    font-family: Lato;
+    color: #000;
+    margin-top: 15%;
+}
+label{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Lato;
+    color: #2c2c2c;
+    padding-top: 6%;
+    margin-left: 15%;
+}
+
+input{
+    font-size: 12px;
+    font-family: Lato;
+    color: #afaeae;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #767676;
+    box-sizing: border-box;
+    width: 85%;
+    height: 35px;
+    overflow: hidden;
+    margin-top: 2%;
+    margin-left: 15%;
+}
+#remerber{
+    font-size: 14px;
+    font-family: Lato;
+    color: #2c2c2c;
+
+}
+#rem{
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 500;
+    font-family: Lato;
+    color: #2c2c2c;
+    margin-top: 2%;
+}
+#sign-in{
+    margin-left: 14%;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 600;
+    font-family: Lato;
+    color: #fff;
+
+    border-radius: 8px;
+    background-color: #5c4237;
+    border: 1px solid #767676;
+    box-sizing: border-box;
+    width: 81%;
+    height: 35px;
+}
+/* img
+{
+    width: 100%;
+    height: 100%;
+} */
+#footer
+{
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    font-family: Lato;
+    color: #979797;
+}
+
+
+
+#title{
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 500;
+    font-family: Lato;
+    color: #000;
+    margin-top: 10%;
+}
+#sign-label{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Lato;
+    color: #2c2c2c;
+    padding-top: 4%;
+    margin-left: 15%;
+}
