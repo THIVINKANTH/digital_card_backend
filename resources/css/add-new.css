@@ -1,0 +1,243 @@
+#name-label
+{
+    font-size: 20px;
+    line-height: 24px;
+    font-family: Lato;
+    color: #373737;
+    overflow: hidden;
+}
+#names
+{
+    border-radius: 8px;
+    border: 0.6px solid rgba(73, 73, 73, 0.9);
+    box-sizing: border-box;
+    height: 34.6px;
+    overflow: hidden;
+}
+#add-new
+{
+    background-image: url(img/add-back.png);
+    /* background-position:center; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    width: 344px;
+    height: 245px;
+}
+#color
+{
+    border-radius: 50%;
+    background: linear-gradient(180deg, #e45186 4.67%, rgba(209, 39, 202, 0.99) 19.24%, rgba(45, 20, 198, 0.99) 35.09%, rgba(48, 161, 196, 0.94) 53.07%, #0ba17d 64.13%, rgba(29, 186, 26, 0.99) 74.5%, rgba(189, 192, 28, 0.96) 81.06%, rgba(198, 46, 12, 0.89) 93.85%);
+    width: 34px;
+    height: 34px;
+
+}
+#colors
+{
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+}
+#name
+{
+    font-size: 24px;
+    font-weight: 500;
+    font-family: Lato;
+    color: #000;
+}
+.form-label
+{
+    font-size: 18px;
+    font-family: Lato;
+    color: #7e7e7e;
+}
+.form-control
+{
+    border-style: none;
+    box-shadow:0;
+    border-color: white;
+    border-radius: 0;
+    border-bottom: 0.5px solid #a6a6a6;
+    box-sizing: border-box;
+    width: 329px;
+
+}
+#save
+{
+    font-size: 24px;
+    /* font-weight: 600; */
+    font-family: Lato;
+    color: #f6f6f6;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: #d06189;
+    width: 345px;
+    height: 45px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-color: #d06189;
+}
+#socials
+{
+    font-size: 18px;
+    font-family: Lato;
+    color: #000;
+}
+#badge
+{
+    font-size: 18px;
+    font-family: Lato;
+    color: #d06189;
+    border-radius: 6px;
+    box-shadow: 4px 8px 18px rgba(0, 0, 0, 0.13);
+    border: 1px solid #d06189;
+    box-sizing: border-box;
+    width: 110px;
+    padding: 10px;
+    font-size: 18px;
+
+}
+#first-card
+{
+    font-size: 34px;
+    line-height: 35px;
+    font-weight: 600;
+    font-family: Lato;
+    color: #3f3f3f;
+}
+#ready
+{
+    font-size: 20px;
+    line-height: 22px;
+    font-family: Lato;
+    color: #616161;
+}
+#img-card
+{
+    border-radius: 8px;
+    background-color: #fffcfb;
+    height: 230px;
+    overflow: hidden;
+    font-size: 20px;
+    color: #373737;
+    font-family: Lato;
+}
+#img-head
+{
+    font-size: 20px;
+    line-height: 24px;
+    font-family: Lato;
+    color: #373737;
+    text-align: left;
+}
+#change-btn
+{
+    border-radius: 6px;
+    border: 0.7px solid rgba(125, 125, 125, 0.9);
+    box-sizing: border-box;
+    width: 112px;
+    height: 34.7px;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: Lato;
+    color: #5f5f5f;
+}
+#change-img
+{
+    border-radius: 16px;
+    background-color: #eaeaea;
+    width: 140px;
+    height: 84px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 24px;
+    color: #000;
+    font-family: Lato;
+}
+#change-img-head
+{
+    font-size: 16px;
+    line-height: 19px;
+    font-family: Lato;
+    color: #494949;
+}
+#add-body
+{
+    border-radius: 12px;
+    background-color: #fffcfb;
+    overflow: hidden;
+    text-align: left;
+    font-size: 14px;
+    color: #000;
+    font-family: Lato;
+}
+#add-more
+{
+    font-size: 24px;
+    letter-spacing: 0.01em;
+    line-height: 26px;
+    font-family: Lato;
+    color: #000;
+}
+#gen
+{
+    font-size: 20px;
+    line-height: 24px;
+    font-family: Lato;
+    color: #373737;
+}
+#add-details
+{
+    text-align: center;
+    border-radius: 8px;
+    background-color: #eaeaea;
+    width: 80px;
+    height: 68px;
+    overflow: hidden;
+    font-size: 14px;
+    color: #000;
+    font-family: Lato;
+}
+#add-text
+{
+    font-size: 14px;
+    font-family: Lato;
+    color: #000;
+}
+#add-icon
+{
+    font-size: 25px;
+}
+#links-head
+{
+    font-size: 16px;
+    line-height: 18px;
+    font-family: Lato;
+    color: #565656;
+}
+#links-body
+{
+    border-radius: 6px;
+    border: 0.7px solid rgba(169, 169, 169, 0.8);
+    box-sizing: border-box;
+    width: 61px;
+    height: 60.7px;
+    overflow: hidden;
+}
+#social
+{
+    background-color: #fff;
+    height: 429px;
+    overflow: hidden;
+    font-size: 20px;
+    color: #373737;
+    font-family: Lato;
+}
+#link-img
+{
+    margin-left: -9px;
+    margin-top: 5px;
+}

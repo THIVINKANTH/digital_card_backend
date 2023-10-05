@@ -22,7 +22,14 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('app.home');
 
-Route::get('admin',function(){
-    return view('auth.admin');
+// Route::get('admin',function(){
+//     return view('auth.admin');
+// });
+
+Route::get('back',function(){
+    return view('app.virtualbackground');
+});
+Route::get('add-new',function(){
+    return view('app.add-new');
 });
 
