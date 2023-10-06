@@ -1,0 +1,126 @@
+#set
+{
+    background-color: #fffdfc;
+    width: 100%;
+    height: 68px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 28px;
+    color: #171717;
+    font-family: Lato;
+}
+#set-text
+{
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 600;
+    font-family: Lato;
+    color: #171717;
+    text-align: left;
+}
+#details
+{
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    text-align: left;
+    font-size: 22px;
+    color: #212020;
+    font-family: Lato;
+}
+.tab
+{
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: 600;
+    font-family: Lato;
+    color: #212020;
+    text-align: left;
+    border-style: none;
+
+}
+.nav-tabs{
+    border-bottom: none;
+}
+.nav-tabs .nav-link
+{
+    border: none;
+}
+.subscription
+{
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 2px 8px 14px rgba(0, 0, 0, 0.22);
+    width: 100%;
+    height: 138px;
+    overflow: hidden;
+    font-size: 22px;
+    color: #2e2e2e;
+    font-family: Lato;
+}
+#sub
+{
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 500;
+    font-family: Lato;
+    color: #2e2e2e;
+}
+#upgrade
+{
+    border-radius: 48px;
+    border: 0.7px solid #9d6f4e;
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 5px 9px;
+    gap: 7px;
+    font-size: 18px;
+    color: #9d6f4e;
+    font-family: Lato;
+}
+#search
+{
+    font-size: 16px;
+    line-height: 24px;
+    font-family: Lato;
+    color: #383838;
+
+}
+.edit
+{
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 2px 6px 16px rgba(0, 0, 0, 0.16);
+    width: 100%;
+    height: 166px;
+    overflow: hidden;
+    font-size: 22px;
+    color: #2e2e2e;
+    font-family: Lato;
+}
+#user-name
+{
+    font-size: 20px;
+    line-height: 24px;
+    font-family: Lato;
+    color: #383838;
+}
+#free-user
+{
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    font-family: Lato;
+    color: #797979;
+    text-align: start;
+}
+#edit
+{
+    border-radius: 48px;
+    border: 0.7px solid #595959;
+    box-sizing: border-box;
+    width: 100%;
+    height: 28.7px;
+    padding-bottom: 32px;
+}

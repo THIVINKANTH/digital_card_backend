@@ -32,4 +32,6 @@ Route::get('back',function(){
 Route::get('add-new',function(){
     return view('app.add-new');
 });
-
+Route::get('settings',function(){
+    return view('app.Settings');
+});
