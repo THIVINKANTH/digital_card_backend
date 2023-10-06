@@ -4,26 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add New Cards</title>
-    <link rel="stylesheet" href="resources\css\nav.css" />
-    <link rel="stylesheet" href="resources\css\sidebar.css" />
-    <link rel="stylesheet" href="resources\css\add-new.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap" />
-    <style>
-        .form-control
-        {
-            border-style: none;
-            box-shadow:0;
-            border-color: white;
-            border-radius: 0;
-            border-bottom: 0.5px solid #a6a6a6;
-            box-sizing: border-box;
-            width: 329px;
-        }
-    </style>
+    <link rel="stylesheet" href="resources\css\nav.css" />
+    <link rel="stylesheet" href="resources\css\sidebar.css" />
+    <link rel="stylesheet" href="resources\css\add-new.css" />
 </head>
 <body >
     <!-- navbar -->
@@ -32,20 +20,19 @@
     @include('layouts.sidebar');
     <!-- home -->
     <div class="container">
-        <div class="row justify-content-center mt-5 ms-lg-5 ms-md-5 ms-1">
-            <div class="row container ms-lg-5 ms-md-5 ms-1 ps-lg-5 ps-md-5 ps-0">
-                <label for="names" id="name-label" class="form-label">Label this Card</label>
-                <input type="text" id="names" class="form-control " >
+        <div class="row justify-content-center mt-5 ms-lg-5 ms-md-5 ms-3">
+            <div class="ms-lg-5 ms-md-5 ms-2 ps-lg-5 ps-md-5 ps-0">
+                <label for="names" id="name-label" class="form-label ms-lg-2 ms-md-2 ms-5 ps-lg-5 ps-md-5 ps-0">Label this Card</label>
+                <input type="text" id="names" class="form-control ms-lg-5 ms-md-5 ms-5 ps-lg-5 ps-md-5 ps-0" >
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-5 mt-5 ">
-                <div class="ms-lg-3 ms-md-0 ms-0 ps-0" >
-                    <div id="add-new" >
-                        <img src="public/image/add-new-img/add-new.png" alt="add" style="width: 370px;
-                        height: 250px;
-                        margin-left: -26px;">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 mt-5 ">
+                <div class="ms-lg-3 ms-md-0 ms-5 " >
+                    <div >
+                        <img src="public/image/add-new-img/add-new.png" alt="add" style="width: 100%;
+                        height: 100%;">
                     </div>
-                    <div class="mt-3">
-                       <ul class="d-flex" style="overflow-x: scroll; overflow-y: hidden; width: 340px;padding-left: 0%">
+                    <div class="mt-3 ">
+                       <ul class="d-flex" style="overflow-x: scroll; overflow-y: hidden; padding-left: 0%">
                         <div class="col mx-2" >
                             <p id="color"></p>
                         </div>
@@ -117,12 +104,12 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-7 mt-5">
-                <div class="row ms-xl-2 ms-lg-5 ms-md-5 ms-5 ">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-8 mt-5">
+                <div class="row ms-xl-2 ms-lg-5 ms-md-3 ms-5 ">
                     <p id="first-card">Create your First Card</p>
                     <p id="ready">Ready to design your card ?  Pick a field below to get started !.</p>
                 </div>
-                <div class="row ms-xl-2 ms-lg-5 ms-md-5 ms-5 mt-3 " id="img-card">
+                <div class="row ms-xl-2 ms-lg-5 ms-md-3 ms-5 mt-3 " id="img-card">
                     <div class="col mt-2">
                          <p id="img-head">Add Images</p>
                     </div>
@@ -144,7 +131,7 @@
                          </div>
                     </div>
                 </div>
-                <div class="row ms-xl-2 ms-lg-5 ms-md-5 ms-5 mt-3" id="add-body">
+                <div class="row ms-xl-2 ms-lg-5 ms-md-3 ms-5 mt-3" id="add-body">
                     <p id="add-more" class="mt-3">Add more information:</p>
                     <p id="gen">General</p>
                     <div class="row justify-content-evenly mb-3">
@@ -174,7 +161,7 @@
                         </div>
                    </div>
                 </div>
-                <div class="row ms-xl-2 ms-lg-5 ms-md-5 ms-5 mt-3" id="social-body">
+                <div class="row ms-xl-2 ms-lg-5 ms-md-3 ms-5 mt-3" id="social-body">
                     <p id="add-more" class="mt-3">Social Links</p>
                     <p id="links-head">Add a link to let people connect with you</p>
                     <div class="row justify-content-evenly mb-3">

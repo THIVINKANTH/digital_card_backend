@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Virtual Background</title>
-    <link rel="stylesheet" href="resources\css\nav.css" />
-    <link rel="stylesheet" href="resources\css\sidebar.css" />
-    <link rel="stylesheet" href="resources\css\virtual.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400&display=swap" />
+    <link rel="stylesheet" href="resources\css\nav.css" />
+    <link rel="stylesheet" href="resources\css\sidebar.css" />
+    <link rel="stylesheet" href="resources\css\virtual.css" />
 </head>
 <body>
      <!-- navbar -->
