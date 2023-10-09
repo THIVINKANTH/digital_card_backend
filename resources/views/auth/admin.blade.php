@@ -72,7 +72,7 @@
                                 </form>
                             </div>
                             <div class="col-md-7 col-sm-12 col-xs-12 ">
-                                <img src="public/img/admin-page.png" alt="login" class="card-img" style="width: 100%;height: 100%;">
+                                <img src="public/image/admin-page.png" alt="login" class="card-img" style="width: 100%;height: 100%;">
                             </div>
                         </div>
                       </div>
