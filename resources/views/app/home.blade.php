@@ -23,7 +23,7 @@
      <!-- home -->
      <section id="home">
         <div class="container">
-            <div class="row justify-content-center ms-5 ps-lg-0 ps-md-0 ps-5 mt-xl-5 mt-lg-3 mt-md-3 mt-0 mb-4" >
+            <div class="row justify-content-center ms-5 ps-lg-0 ps-md-0 ps-5 mt-xl-5 mt-lg-3 mt-md-3 mt-0 mb-4 d-flex flex-wrap-reverse" >
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 mt-5">
                     <p id="success" class="mt-xl-5 mt-lg-2 mt-md-0 mt-0 pt-xl-5 pt-lg-0 pt-md-0 pt-0">Your Success is our Business</p>
                     <h1>Welcome to SearchSoft Digital Cards</h1>
@@ -32,7 +32,7 @@
                     <span class="mb-3"></span>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 mt-5">
-                    <img src="public\image\home\index-mobile.png" alt="mobile" class="w-75 mt-xl-5 mt-lg-3 mt-md-0 mt-0 mb-5">
+                    <img src="public\image\home\index-mobile.png" alt="mobile" class="w-75 mt-xl-5 mt-lg-3 mt-md-0 mt-0 mb-lg-5 mb-md-5 mb-0">
                     <p class="mb-3"></p>
                 </div>
             </div>

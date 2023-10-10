@@ -29,9 +29,10 @@
                 <div class="ms-lg-3 ms-md-0 ms-5 mb-5" style="border-radius: 15.11px;
                     background-color: #f2f2f2;
                     box-shadow: 0px 3.777777671813965px 3.78px rgba(0, 0, 0, 0.25);">
-                    <div >
-                        <img src="public/image/add-new-img/add-new.png" alt="add" style="width: 100%;
+                    <div>
+                        <img src="public\image\add-new-img\add-background.png" alt="add-back" style="width: 100%;
                         height: 100%;border-radius: 15.11px">
+                        <img src="public/image/add-new-img/Rectangle.png" alt="add" id="add-img" class="add">
                     </div>
                     <div class="mt-3 ">
                        <ul class="d-flex" style="overflow-x: scroll; overflow-y: hidden; padding-left: 0%">
