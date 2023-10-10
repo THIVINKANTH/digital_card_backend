@@ -230,31 +230,6 @@
                         </div>
                         <div class="carousel-item" style="transition: none;">
                             <div class="col mx-lg-0 mx-md-3 mx-0">
-                                <img src="public/image/abstract/Rectangle2074.png" alt="abstract" id="card-img">
-                            </div>
-                        </div>
-                        <div class="carousel-item" style="transition: none;">
-                            <div class="col mx-lg-0 mx-md-3 mx-0">
-                                <img src="public/image/abstract/Rectangle2072.png" alt="abstract" id="card-img">
-                            </div>
-                        </div>
-                        <div class="carousel-item" style="transition: none;">
-                            <div class="col mx-lg-0 mx-md-3 mx-0">
-                                <img src="public/image/abstract/Rectangle-2076.png" alt="abstract" id="card-img">
-                            </div>
-                        </div>
-                        <div class="carousel-item" style="transition: none;">
-                            <div class="col mx-lg-0 mx-md-3 mx-0">
-                                <img src="public/image/abstract/Rectangle-2077.png" alt="abstract" id="card-img">
-                            </div>
-                        </div>
-                        <div class="carousel-item" style="transition: none;">
-                            <div class="col mx-lg-0 mx-md-3 mx-0">
-                                <img src="public/image/abstract/Rectangle2075.png" alt="abstract" id="card-img">
-                            </div>
-                        </div>
-                        <div class="carousel-item" style="transition: none;">
-                            <div class="col mx-lg-0 mx-md-3 mx-0">
                                 <img src="public/image/nature/Rectangle-2076.png" alt="abstract" id="card-img">
                             </div>
                         </div>
@@ -293,7 +268,7 @@
         <div class=" text-center my-3 mt-5 ms-5 ps-lg-0 ps-4">
             <p id="card-head"> City</p>
             <div class="row mx-auto my-auto justify-content-center">
-                <div id="city" class="carousel slide" data-bs-ride="carousel">
+                <div id="city" class="carousel  slide" data-bs-ride="carousel">
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active" style="transition: none;">
                             <div class="col mx-lg-0 mx-md-3 mx-0">
@@ -396,7 +371,7 @@
         <div class=" text-center my-3 mt-5 ms-5 ps-lg-0 ps-4">
             <p id="card-head"> Iconic</p>
             <div class="row mx-auto my-auto justify-content-center">
-                <div id="iconic" class="carousel slide" data-bs-ride="carousel">
+                <div id="iconic" class="carousel  slide" data-bs-ride="carousel">
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active" style="transition: none;">
                             <div class="col mx-lg-0 mx-md-3 mx-0">
@@ -499,7 +474,7 @@
          <div class="text-center my-3 mt-5 ms-5 ps-lg-0 ps-4">
             <p id="card-head"> Indoor</p>
             <div class="row mx-auto my-auto justify-content-center">
-                <div id="indoor" class="carousel slide" data-bs-ride="carousel">
+                <div id="indoor" class="carousel  slide" data-bs-ride="carousel">
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active" style="transition: none;">
                             <div class="col mx-lg-0 mx-md-3 mx-0">
@@ -608,19 +583,18 @@
         let items = document.querySelectorAll('.carousel .carousel-item')
 
         items.forEach((el) => {
-            const minPerSlide = 4
-            let next = el.nextElementSibling
+            const minPerSlide = 4;
+            let next = el.nextElementSibling;
             for (var i=1; i<minPerSlide; i++) {
                 if (!next) {
                     // wrap carousel by using first child
-                    next = items[0]
+                    next = items[0];
                   }
-                let cloneChild = next.cloneNode(true)
-                el.appendChild(cloneChild.children[0])
-                next = next.nextElementSibling
+                let cloneChild = next.cloneNode(true);
+                el.appendChild(cloneChild.children[0]);
+                next = next.nextElementSibling;
             }
         })
-
     </script>
     <script>
         let sidebar = document.querySelector(".sidebar");

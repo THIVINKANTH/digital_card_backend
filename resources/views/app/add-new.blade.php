@@ -13,23 +13,25 @@
     <link rel="stylesheet" href="resources\css\sidebar.css" />
     <link rel="stylesheet" href="resources\css\add-new.css" />
 </head>
-<body >
+<body style=" background-color: #f4eeeb;">
     <!-- navbar -->
     @include('layouts.header');
     <!-- sidebar -->
     @include('layouts.sidebar');
     <!-- home -->
-    <div class="container">
+    <div class="container" >
         <div class="row justify-content-center mt-5 ms-lg-5 ms-md-5 ms-3">
-            <div class="ms-lg-5 ms-md-5 ms-2 ps-lg-5 ps-md-5 ps-0">
+            <div class="ms-lg-5 ms-md-5 ms-1 ps-lg-5 ps-md-5 ps-0">
                 <label for="names" id="name-label" class="form-label ms-lg-2 ms-md-2 ms-5 ps-lg-5 ps-md-5 ps-0">Label this Card</label>
-                <input type="text" id="names" class="form-control ms-lg-5 ms-md-5 ms-5 ps-lg-5 ps-md-5 ps-0" >
+                <input type="text" id="names" class="form-control ms-lg-5 ms-md-5 ms-5 ps-lg-2 ps-md-2 ps-2" >
             </div>
             <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 mt-5 ">
-                <div class="ms-lg-3 ms-md-0 ms-5 " >
+                <div class="ms-lg-3 ms-md-0 ms-5 mb-5" style="border-radius: 15.11px;
+                    background-color: #f2f2f2;
+                    box-shadow: 0px 3.777777671813965px 3.78px rgba(0, 0, 0, 0.25);">
                     <div >
                         <img src="public/image/add-new-img/add-new.png" alt="add" style="width: 100%;
-                        height: 100%;">
+                        height: 100%;border-radius: 15.11px">
                     </div>
                     <div class="mt-3 ">
                        <ul class="d-flex" style="overflow-x: scroll; overflow-y: hidden; padding-left: 0%">
@@ -69,13 +71,15 @@
                        </ul>
                     </div>
                     <div class="row mt-4 ">
-                        <p id="name">Full name</p>
+                        <p id="name" class="mx-2">Full name</p>
                         <form action="">
                             <div class="mx-2">
                                 <label for="fullname" class="form-label">First name</label>
                                 <input type="text" class="form-control" id="fullname">
                             </div>
-                            <button type="submit" id="save" class="mt-4">SAVE</button>
+                            <div class="mx-2">
+                                <button type="submit" id="save" class="mt-4">SAVE</button>
+                            </div>
                             <div class="mx-2 mt-3">
                                 <label for="lastname" class="form-label">Last name</label>
                                 <input type="text" class="form-control" id="lastname">
@@ -104,12 +108,12 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-8 mt-5">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-8 mt-5 ">
                 <div class="row ms-xl-2 ms-lg-5 ms-md-3 ms-5 ">
                     <p id="first-card">Create your First Card</p>
                     <p id="ready">Ready to design your card ?  Pick a field below to get started !.</p>
                 </div>
-                <div class="row ms-xl-2 ms-lg-5 ms-md-3 ms-5 mt-3 " id="img-card">
+                <div class="row ms-xl-2 ms-lg-5 ms-md-3 ms-5 mt-3 mx-2" id="img-card">
                     <div class="col mt-2">
                          <p id="img-head">Add Images</p>
                     </div>
@@ -131,37 +135,37 @@
                          </div>
                     </div>
                 </div>
-                <div class="row ms-xl-2 ms-lg-5 ms-md-3 ms-5 mt-3" id="add-body">
+                <div class="row ms-xl-2 ms-lg-5 ms-md-3 ms-5 mt-3 mx-2" id="add-body">
                     <p id="add-more" class="mt-3">Add more information:</p>
                     <p id="gen">General</p>
                     <div class="row justify-content-evenly mb-3">
-                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3" id="add-details">
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3 mx-2" id="add-details">
                             <i class="bi bi-buildings" id="add-icon"></i>
                             <p id="add-text">Company</p>
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3" id="add-details">
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3 mx-2" id="add-details">
                             <i class="bi bi-browser-chrome" id="add-icon"></i>
                             <p id="add-text">Website</p>
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3" id="add-details">
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3 mx-2" id="add-details">
                             <i class="bi bi-telephone-fill" id="add-icon"></i>
                             <p id="add-text">Phone</p>
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3" id="add-details">
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3 mx-2" id="add-details">
                             <i class="bi bi-envelope-at" id="add-icon"></i>
                             <p id="add-text">E mail</p>
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3" id="add-details">
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3 mx-2" id="add-details">
                             <i class="bi bi-geo-alt-fill" id="add-icon"></i>
                             <p id="add-text">Address</p>
                         </div>
-                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3" id="add-details">
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3 mx-2" id="add-details">
                             <i class="bi bi-link-45deg" id="add-icon"></i>
                             <p id="add-text">Link</p>
                         </div>
                    </div>
                 </div>
-                <div class="row ms-xl-2 ms-lg-5 ms-md-3 ms-5 mt-3" id="social-body">
+                <div class="row ms-xl-2 ms-lg-5 ms-md-3 ms-5 mt-3 mx-2" id="social-body">
                     <p id="add-more" class="mt-3">Social Links</p>
                     <p id="links-head">Add a link to let people connect with you</p>
                     <div class="row justify-content-evenly mb-3">
