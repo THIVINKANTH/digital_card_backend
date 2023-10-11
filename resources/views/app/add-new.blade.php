@@ -21,7 +21,7 @@
     <!-- home -->
     <div class="container" >
         <div class="row justify-content-center mt-5 ms-lg-5 ms-md-5 ms-3">
-            <div class="ms-lg-5 ms-md-5 ms-1 ps-lg-5 ps-md-5 ps-0">
+            <div class="ms-lg-5 ms-md-5 ms-1 ps-lg-5 ps-md-5 ps-3">
                 <label for="names" id="name-label" class="form-label ms-lg-2 ms-md-2 ms-5 ps-lg-5 ps-md-5 ps-0">Label this Card</label>
                 <input type="text" id="names" class="form-control ms-lg-5 ms-md-5 ms-5 ps-lg-2 ps-md-2 ps-2" >
             </div>
@@ -33,6 +33,7 @@
                         <img src="public\image\add-new-img\add-background.png" alt="add-back" style="width: 100%;
                         height: 100%;border-radius: 15.11px">
                         <img src="public/image/add-new-img/Rectangle.png" alt="add" id="add-img" class="add">
+                        {{-- <img src="public/image/add-new-img/photo.png" alt="add" id="add-per"> --}}
                     </div>
                     <div class="mt-3 ">
                        <ul class="d-flex" style="overflow-x: scroll; overflow-y: hidden; padding-left: 0%">
@@ -82,6 +83,10 @@
                                 <button type="submit" id="save" class="mt-4">SAVE</button>
                             </div>
                             <div class="mx-2 mt-3">
+                                <label for="middlename" class="form-label">Middle  name</label>
+                                <input type="text" class="form-control" id="middlename">
+                            </div>
+                            <div class="mx-2 mt-3">
                                 <label for="lastname" class="form-label">Last name</label>
                                 <input type="text" class="form-control" id="lastname">
                             </div>
@@ -89,21 +94,18 @@
                                 <label for="desgination" class="form-label">Desgination</label>
                                 <input type="text" class="form-control" id="desgination">
                             </div>
-                            <div class="mx-2 mt-3">
-                                <label for="department" class="form-label">Department</label>
-                                <input type="text" class="form-control" id="department">
-                            </div>
-                            <div class="mx-2 mt-3">
+
+                            {{-- <div class="mx-2 mt-3">
                                 <label for="company" class="form-label">Company</label>
                                 <input type="text" class="form-control" id="company">
                             </div>
                             <div class="mx-2 mt-3">
                                 <label for="headline" class="form-label">Headline</label>
                                 <input type="text" class="form-control" id="headline">
-                            </div>
+                            </div> --}}
                             <div class="mx-2 mt-3 mb-5">
                                 <p id="socials">Social Media Links</p>
-                                <button id="badge">Add Badge</button>
+                                <a href="#social-body" id="badge" type="button">Add Badge</a>
                             </div>
                         </form>
                     </div>
@@ -128,11 +130,11 @@
                          </div>
                          <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-3" id="change-img">
                              <i class="bi bi-plus-lg"></i>
-                             <p id="change-img-head">Company Logo</p>
+                             <p id="change-img-head">Profile Image</p>
                          </div>
                          <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-3" id="change-img">
                              <i class="bi bi-plus-lg"></i>
-                             <p id="change-img-head">Company Logo</p>
+                             <p id="change-img-head">Cover Image</p>
                          </div>
                     </div>
                 </div>

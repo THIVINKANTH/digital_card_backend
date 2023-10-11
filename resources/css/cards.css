@@ -1,0 +1,197 @@
+/* edit, del, setting*/
+.bi-pencil-square {
+    color: #9d6f4e;
+    background-color: #ffffff;
+}
+.bi-pencil-square:hover {
+    background-color: #9d6f4e;
+    color: #ffffff;
+}
+.bi-trash {
+    color: #9d6f4e;
+    background-color: #ffffff;
+}
+.bi-trash:hover {
+    background-color: #9d6f4e;
+    color: #ffffff;
+}
+.bi-gear {
+    color: #9d6f4e;
+    background-color: #ffffff;
+}
+.bi-gear:hover {
+    background-color: #9d6f4e;
+    color: #ffffff;
+}
+
+/* card */
+#card-1 {
+    background-color: #f4eeeb;
+    box-shadow: 2px 8px 24px 0px rgba(0, 0, 0, 0.11);
+    border: none;
+}
+.card-tit {
+    color: #3b3b3b;
+    font-family: Lato;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+}
+.bi-plus-circle-fill {
+    color: #d9d9d9;
+}
+.card-bp {
+    color: #3e3e3e;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+}
+.card-bp:hover {
+    background: #f4eeeb;
+    color: #9d6f4e;
+}
+.card-bw {
+    color: #3e3e3e;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+}
+.card-bw:hover {
+    background: #f4eeeb;
+    color: #9d6f4e;
+}
+.bi-plus-circle {
+    color: #9d6f4e;
+}
+#card-2 {
+    background-color: #fffefe;
+    border-radius: 8px;
+    border: none;
+}
+.card-t1 {
+    color: #7f7f7f;
+    font-family: Lato;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+}
+.card-t1:hover {
+    text-decoration: underline;
+    color: #9d6f4e;
+}
+.card-t2 {
+    color: #7f7f7f;
+    font-family: Lato;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+}
+.card-t2:hover {
+    text-decoration: underline;
+    color: #9d6f4e;
+}
+#card-ti2 {
+    background-color: #fffefe;
+}
+#card-3 {
+    border-radius: 11.257px;
+    background: #fff;
+    box-shadow: 7.50495px 15.0099px 33.77228px 0px rgba(0, 0, 0, 0.14);
+}
+.nme {
+    color: #000;
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+}
+.rle {
+    color: #4c4c4c;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+.num {
+    color: #5a5a5a;
+    font-family: Roboto;
+    font-size: 14.111px;
+    font-style: normal;
+    font-weight: 500;
+}
+.wp-num {
+    border-radius: 15.111px;
+    background: #f2f2f2;
+    box-shadow: 0px 3.77778px 3.77778px 0px rgba(0, 0, 0, 0.25);
+}
+.bi-whatsapp {
+    display: inline-block;
+    background-color: #d06189;
+    border-radius: 60px;
+    padding: 0.5em 0.6em;
+}
+.mail {
+    display: inline-block;
+    background-color: #d06189;
+    border-radius: 60px;
+    padding: 0.5em 0.6em;
+}
+.bi-telephone {
+    display: inline-block;
+    background-color: #d06189;
+    border-radius: 60px;
+    padding: 0.5em 0.6em;
+}
+.scan {
+    border: 2px solid #d06189;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+}
+#inpt {
+    border: none;
+}
+#send-btn {
+    border-radius: 8px;
+    background: #d06189;
+}
+.int-con {
+    color: #444;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 114.286% */
+    letter-spacing: 0.14px;
+}
+.per-card {
+    color: #000;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; /* 125% */
+    letter-spacing: 0.16px;
+}
+.add-card-parent {
+    border-radius: 6px;
+    background-color: #9d6f4e;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 14px;
+    color: #fff;
+    font-family: Lato;
+}

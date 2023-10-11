@@ -28,7 +28,7 @@
                     <p id="success" class="mt-xl-5 mt-lg-2 mt-md-0 mt-0 pt-xl-5 pt-lg-0 pt-md-0 pt-0">Your Success is our Business</p>
                     <h1>Welcome to SearchSoft Digital Cards</h1>
                     <p id="we" class="mt-4">We’re dedicated to helping your business succeed.</p>
-                    <button id="home-btn" class="mt-4">Lets Explore</button>
+                    <a id="home-btn" class="mt-4" href="add-new" type="button">Lets Explore</a>
                     <span class="mb-3"></span>
                 </div>
                 <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 mt-5">

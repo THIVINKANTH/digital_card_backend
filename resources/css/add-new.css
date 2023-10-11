@@ -30,8 +30,15 @@
     width: 100%;
     height: 100%;
     border-radius: 15.11px;
-    margin-top: -290px;
+    margin-top: -287px;
 }
+/* #add-per
+{
+    width: 188px;
+    height: 280px;
+    margin-top: -322px;
+    margin-left: 59px;
+} */
 #color
 {
     border-radius: 50%;
@@ -106,7 +113,7 @@
     width: 110px;
     padding: 10px;
     font-size: 18px;
-
+    text-decoration: none;
 }
 #first-card
 {

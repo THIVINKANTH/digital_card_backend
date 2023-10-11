@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CardsController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -35,3 +36,22 @@ Route::get('add-new',function(){
 Route::get('settings',function(){
     return view('app.Settings');
 });
+Route::get('cards',function()
+{
+    return view('app.cards');
+});
+
+
+// create cards
+Route::get('create_card',[CardsController::class,'create_card']);
+Route::post('create_card',[CardsController::class,'insert_card']);
+
+//card list
+Route::get('list',[CardsController::class,'cards_list']);
+
+//update cards
+Route::get('update/{id}',[CardsController::class,'edit_card']);
+Route::post('update/{id}',[CardsController::class,'update_card']);
+
+//delete card
+Route::get('delete/{id}',[CardsController::class,'delete_card']);
