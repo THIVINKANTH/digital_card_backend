@@ -88,6 +88,7 @@
     transition: 0s;
     margin-left: 52px;
     color: white;
+    width: fit-content;
 }
 .sidebar li:hover .tooltip {
     opacity: 1;

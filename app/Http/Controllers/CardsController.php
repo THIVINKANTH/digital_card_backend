@@ -14,32 +14,31 @@ class CardsController extends Controller
         return view('app.add-new');
     }
     //images upload
-    public function Fileupload($file,$destinationPath,$dir)
-    {
-        $file->move($destinationPath,$file->getClientOriginalName());
-        // return '/'.$file->getClientOriginalName();
-        return asset('public/'.$dir.'/'.$file->getClientOriginalName());
-    }
+    // public function Fileupload($file,$destinationPath,$dir)
+    // {
+    //     $file->move($destinationPath,$file->getClientOriginalName());
+    //     return asset('public/'.$dir.'/'.$file->getClientOriginalName());
+    // }
     //insert card details
     public function insert_card(Request $request)
     {
-        $profile_image = $request->file('profile');
-        $company_logo = $request->file('logo');
-        $cover_image = $request->file('background');
-        $card_frame = $request->file('layouts');
+        // $profile_image = $request->file('profile');
+        // $company_logo = $request->file('logo');
+        // $cover_image = $request->file('background');
+        // $card_frame = $request->file('layouts');
 
-        $profile_image = $this->Fileupload($profile_image,public_path('/profile_image'),'profile');
-        $company_logo = $this->Fileupload($company_logo,public_path('/company_logo'),'logo');
-        $cover_image = $this->Fileupload($cover_image,public_path('/cover_image'),'background');
-        $card_frame = $this->Fileupload($card_frame,public_path('/card_frame'),'layouts');
+        // $profile_image = $this->Fileupload($profile_image,public_path('/profile_image'),'profile');
+        // $company_logo = $this->Fileupload($company_logo,public_path('/company_logo'),'logo');
+        // $cover_image = $this->Fileupload($cover_image,public_path('/cover_image'),'background');
+        // $card_frame = $this->Fileupload($card_frame,public_path('/card_frame'),'layouts');
 
         DB::table('cards')->insert([
             'card_name' => $request->cardname,
             'user_id' => $request->user_id,
-            'photo' => $profile_image,
-            'card_logo' => $company_logo,
-            'card_frame' => $card_frame,
-            'card_background' => $cover_image,
+            // 'photo' => $profile_image,
+            // 'card_logo' => $company_logo,
+            // 'card_frame' => $card_frame,
+            // 'card_background' => $cover_image,
             'card_color' => $request->color,
             'card_type' => $request->cardtype,
             'first_name' => $request->firstname,
@@ -49,7 +48,7 @@ class CardsController extends Controller
             'social_media_links' =>$request->socialmedia,
             'others' => $request->others
         ]);
-        return redirect('/cards')->with('message','Digital Cards Created Successfully');
+        return redirect('/cards')->with('message','Digital Card Created Successfully');
     }
 
 

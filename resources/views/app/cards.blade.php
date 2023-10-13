@@ -23,6 +23,9 @@
         <div class="row mt-5">
             <div class="col-lg-12 col-md-12 col-sm-12 ">
                 <section class="home-section">
+                    <div class="row justify-content-center" style="font-size:30px; color: purple;font-style: italic">
+                        {{ session('message') }}
+                    </div>
                     <div class="container" id="borr">
                         <div class="row py-2" style="border: 0.4px solid rgba(157, 111, 78, 0.30);
                             border-radius: 12px;margin-left: 66px;">
