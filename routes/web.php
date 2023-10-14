@@ -33,6 +33,10 @@ Route::get('back',function(){
 Route::get('add-new',function(){
     return view('app.add-new');
 });
+Route::get('edit',function()
+{
+    return view('app.edit');
+});
 Route::get('settings',function(){
     return view('app.Settings');
 });

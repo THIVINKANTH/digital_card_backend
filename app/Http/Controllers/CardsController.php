@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Cards;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 
 class CardsController extends Controller
@@ -14,14 +15,19 @@ class CardsController extends Controller
         return view('app.add-new');
     }
     //images upload
+
     // public function Fileupload($file,$destinationPath,$dir)
     // {
     //     $file->move($destinationPath,$file->getClientOriginalName());
     //     return asset('public/'.$dir.'/'.$file->getClientOriginalName());
     // }
+
     //insert card details
     public function insert_card(Request $request)
     {
+
+        // print_r($request->all());
+
         // $profile_image = $request->file('profile');
         // $company_logo = $request->file('logo');
         // $cover_image = $request->file('background');
@@ -31,6 +37,11 @@ class CardsController extends Controller
         // $company_logo = $this->Fileupload($company_logo,public_path('/company_logo'),'logo');
         // $cover_image = $this->Fileupload($cover_image,public_path('/cover_image'),'background');
         // $card_frame = $this->Fileupload($card_frame,public_path('/card_frame'),'layouts');
+
+        $socialmedia = json_encode($request->socialmedia);
+        $others = json_encode($request->others);
+        // echo '<pre>';print_r(json_decode($socialmedia,true)['insta']);
+        // exit;
 
         DB::table('cards')->insert([
             'card_name' => $request->cardname,
@@ -45,8 +56,8 @@ class CardsController extends Controller
             'middle_name' => $request->middlename,
             'last_name' => $request->lastname,
             'desgination' => $request->desgination,
-            'social_media_links' =>$request->socialmedia,
-            'others' => $request->others
+            'social_media_links' =>$socialmedia,
+            'others' => $others
         ]);
         return redirect('/cards')->with('message','Digital Card Created Successfully');
     }
@@ -55,7 +66,10 @@ class CardsController extends Controller
     //cards list
     public function cards_list()
     {
-        $list = Cards::all();
+        $id = Auth::user()->id;
+        $list = Cards::where('user_id',$id)->get();
+        // print_r(Cards::where('user_id',$id)->get());
+        // exit;
         return view('app.cards',compact('list'));
     }
 

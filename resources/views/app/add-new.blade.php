@@ -194,17 +194,17 @@
                         />
                     </div>
                     <input
-                        type="text" id="email" name="phone" placeholder="Department" class="form-control mt-3"
+                        type="text" id="email" name="others[company][Department]" placeholder="Department" class="form-control mt-3"
                         />
                     <input
                         type="text"
                         id="email1"
-                        name="extension"
+                        name="others[company][com-name]"
                         placeholder="Company"
                         class="form-control mt-3 mb-4"
                         />
                     <input
-                        type="text" id="email" name="phone" placeholder="Headline" class="form-control mt-3 mb-4"
+                        type="text" id="email" name="others[company][Headline]" placeholder="Headline" class="form-control mt-3 mb-4"
                         />
                     </div>
                     <div id="Menu2" style="display: none" class="mx-2 mt-3">
@@ -221,12 +221,12 @@
                         />
                     </div>
                     <input
-                        type="text" id="email" name="phone" placeholder="searchsoft.in" class="form-control mt-3"
+                        type="text" id="email" name="others[website][url]" placeholder="searchsoft.in" class="form-control mt-3"
                         />
                     <input
                         type="text"
                         id="email1"
-                        name="extension"
+                        name="others[website][text]"
                         placeholder="Display Text"
                         class="form-control mt-3 mb-4"
                         />
@@ -245,22 +245,22 @@
                         />
                     </div>
                     <input
-                        type="text" id="email" name="phone" placeholder="Phone" class="form-control mt-3"
+                        type="text" id="email" name="others[phone][number]" placeholder="Phone" class="form-control mt-3"
                         />
                     <input
                         type="text"
                         id="text"
-                        name="Phone"
-                        placeholder="Extension"
+                        name="others[phone][an-number]"
+                        placeholder="Another Number"
                         class="form-control mt-3"
                         />
-                    <input
+                    {{-- <input
                         type="text"
                         id="text"
-                        name="Phone"
+                        name="others[phone][an-number]"
                         placeholder="Label"
                         class="form-control mt-3 mb-4"
-                        />
+                        /> --}}
                     </div>
                     <div id="Menu4" style="display: none;">
                     <div>
@@ -276,13 +276,13 @@
                         />
                     </div>
                     <input
-                        type="text" id="email" name="phone" placeholder="Email" class="form-control mt-3"
+                        type="text" id="email" name="others[email][id]" placeholder="Email" class="form-control mt-3"
                         />
                     <input
                         type="text"
                         id="text"
-                        name="Phone"
-                        placeholder="No label"
+                        name="others[email][text]"
+                        placeholder="text"
                         class="form-control mt-3 mb-4"
                         />
                     </div>
@@ -300,7 +300,7 @@
                         />
                     </div>
                     <input
-                        type="text" id="email" name="phone" placeholder="Address" class="form-control mt-3 mb-4"
+                        type="text" id="email" name="others[address][location]" placeholder="Address" class="form-control mt-3 mb-4"
                         />
                     </div>
                     <div id="Menu6" style="display: none;">
@@ -317,10 +317,10 @@
                         />
                     </div>
                     <input
-                        type="text" id="email" name="phone" placeholder="searchsoft.in" class="form-control mt-3"
+                        type="text" id="email" name="others[link][url]" placeholder="searchsoft.in" class="form-control mt-3"
                         />
                     <input
-                        type="text" id="email" name="phone" placeholder="Display text" class="form-control mt-3 mb-4"
+                        type="text" id="email" name="others[link][text]" placeholder="Display text" class="form-control mt-3 mb-4"
                         />
                     </div>
                     <div id="Menu7" style="display: none;">
@@ -337,10 +337,10 @@
                         />
                     </div>
                     <input
-                        type="text" id="email" name="socialmedia" value="@" class="form-control mt-3"
+                        type="text" id="email" name="socialmedia[insta][id]" value="" placeholder="@" class="form-control mt-3"
                         />
                     <input
-                        type="text" id="email" name="socialmedia" placeholder="Display text" class="form-control mt-3 mb-4"
+                        type="text" id="email" name="socialmedia[insta][text]" placeholder="Display text" class="form-control mt-3 mb-4"
                         />
                     </div>
                     <div id="Menu8" style="display: none;">
@@ -357,10 +357,10 @@
                         />
                     </div>
                     <input
-                        type="text" id="email" name="socialmedia" value="@" class="form-control mt-3"
+                        type="text" id="email" name="socialmedia[twitter][id]" value="" placeholder="@" class="form-control mt-3"
                         />
                     <input
-                        type="text" id="email" name="socialmedia" placeholder="Display text" class="form-control mt-3 mb-4"
+                        type="text" id="email" name="socialmedia[twitter][text]" placeholder="Display text" class="form-control mt-3 mb-4"
                         />
                     </div>
                     <div id="Menu9" style="display: none;">
@@ -377,10 +377,10 @@
                         />
                     </div>
                     <input
-                        type="text" id="email" name="socialmedia" value="facebook.com/" class="form-control mt-3"
+                        type="text" id="email" name="socialmedia[facebook][id]" value="" placeholder="@" class="form-control mt-3"
                         />
                     <input
-                        type="text" id="email" name="socialmedia" placeholder="Display text" class="form-control mt-3 mb-4"
+                        type="text" id="email" name="socialmedia[facebook][text]" placeholder="Display text" class="form-control mt-3 mb-4"
                         />
                     </div>
                     <div id="Menu10" style="display: none;">
@@ -397,10 +397,10 @@
                         />
                     </div>
                     <input
-                        type="text" id="email" name="socialmedia" placeholder="9876543210" class="form-control mt-3"
+                        type="text" id="email" name="socialmedia[whatsapp][id]" placeholder="9876543210" class="form-control mt-3"
                         />
                     <input
-                        type="text" id="email" name="socialmedia" placeholder="Display text" class="form-control mt-3 mb-4"
+                        type="text" id="email" name="socialmedia[whatsapp][text]" placeholder="Display text" class="form-control mt-3 mb-4"
                         />
                     </div>
                     <div id="Menu11" style="display: none;">
@@ -417,10 +417,10 @@
                         />
                     </div>
                     <input
-                        type="text" id="email" name="socialmedia" value="@" class="form-control mt-3"
+                        type="text" id="email" name="socialmedia[telegram][id]" value="" placeholder="@" class="form-control mt-3"
                         />
                     <input
-                        type="text" id="email" name="socialmedia" placeholder="Display text" class="form-control mt-3 mb-4"
+                        type="text" id="email" name="socialmedia[telegram][text]" placeholder="Display text" class="form-control mt-3 mb-4"
                         />
                     </div>
                     <div id="Menu12" style="display: none;">
@@ -437,10 +437,10 @@
                         />
                     </div>
                     <input
-                        type="text" id="email" name="socialmedia" value="http://youtube.com/" class="form-control mt-3"
+                        type="text" id="email" name="socialmedia[youtube][id]" value="" placeholder="http://youtube.com/" class="form-control mt-3"
                         />
                     <input
-                        type="text" id="email" name="socialmedia" placeholder="Display text" class="form-control mt-3 mb-4"
+                        type="text" id="email" name="socialmedia[youtube][text]" placeholder="Display text" class="form-control mt-3 mb-4"
                         />
                     </div>
                     <div id="Menu13" style="display: none;">
@@ -457,10 +457,10 @@
                         />
                     </div>
                     <input
-                        type="text" id="email" name="socialmedia" value="pinterest.com/" class="form-control mt-3"
+                        type="text" id="email" name="socialmedia[pinterest][id]" value="" placeholder="pinterest.com/" class="form-control mt-3"
                         />
                     <input
-                        type="text" id="email" name="socialmedia" placeholder="Display text" class="form-control mt-3 mb-4"
+                        type="text" id="email" name="socialmedia[pinterest][text]" placeholder="Display text" class="form-control mt-3 mb-4"
                         />
                     </div>
                     <div id="Menu14" style="display: none;">
@@ -477,10 +477,10 @@
                         />
                     </div>
                     <input
-                        type="text" id="email" name="socialmedia" value="vimeo.com/" class="form-control mt-3"
+                        type="text" id="email" name="socialmedia[vimeo][id]" value="" placeholder="vimeo.com/" class="form-control mt-3"
                         />
                     <input
-                        type="text" id="email" name="socialmedia" placeholder="Display text" class="form-control mt-3 mb-4"
+                        type="text" id="email" name="socialmedia[vimeo][text]" placeholder="Display text" class="form-control mt-3 mb-4"
                         />
                     </div>
                     <div id="Menu15" style="display: none;">
@@ -497,10 +497,10 @@
                         />
                     </div>
                     <input
-                        type="text" id="email" name="socialmedia" value="discord.gg/" class="form-control mt-3"
+                        type="text" id="email" name="socialmedia[baseline][id]" value="" placeholder="discord.gg/" class="form-control mt-3"
                         />
                     <input
-                        type="text" id="email" name="socialmedia" placeholder="Display text" class="form-control mt-3 mb-4"
+                        type="text" id="email" name="socialmedia[baseline][text]" placeholder="Display text" class="form-control mt-3 mb-4"
                         />
                     </div>
                     <div id="Menu16" style="display: none;">
@@ -517,10 +517,10 @@
                         />
                     </div>
                     <input
-                        type="text" id="email" name="socialmedia" value="linkedin.com/" class="form-control mt-3"
+                        type="text" id="email" name="socialmedia[linkedin][id]" value="" placeholder="linkedin.com/" class="form-control mt-3"
                         />
                     <input
-                        type="text" id="email" name="socialmedia" placeholder="Display text" class="form-control mt-3 mb-4"
+                        type="text" id="email" name="socialmedia[linkedin][text]" placeholder="Display text" class="form-control mt-3 mb-4"
                         />
                     </div>
                     <div id="Menu17" style="display: none;">
@@ -537,10 +537,10 @@
                         />
                     </div>
                     <input
-                        type="text" id="email" name="socialmedia" placeholder="Username" class="form-control mt-3"
+                        type="text" id="email" name="socialmedia[github][id]" placeholder="Username" class="form-control mt-3"
                         />
                     <input
-                        type="text" id="email" name="socialmedia" placeholder="Display text" class="form-control mt-3 mb-4"
+                        type="text" id="email" name="socialmedia[github][text]" placeholder="Display text" class="form-control mt-3 mb-4"
                         />
                     </div>
                     <div id="Menu18" style="display: none;">
@@ -557,10 +557,10 @@
                         />
                     </div>
                     <input
-                        type="text" id="email" name="socialmedia" value="paytm.me/" class="form-control mt-3"
+                        type="text" id="email" name="socialmedia[paytm][id]" value="" placeholder="paytm.me/" class="form-control mt-3"
                         />
                     <input
-                        type="text" id="email" name="socialmedia" placeholder="Display text" class="form-control mt-3 mb-4"
+                        type="text" id="email" name="socialmedia[paytm][text]" placeholder="Display text" class="form-control mt-3 mb-4"
                         />
                     </div>
                     <div id="Menu19" style="display: none;">
@@ -577,10 +577,10 @@
                         />
                     </div>
                     <input
-                        type="text" id="email" name="socialmedia" value="gpay.me/" class="form-control mt-3"
+                        type="text" id="email" name="socialmedia[gpay][id]" value="" placeholder="gpay.me/" class="form-control mt-3"
                         />
                     <input
-                        type="text" id="email" name="socialmedia" placeholder="Display text" class="form-control mt-3 mb-4"
+                        type="text" id="email" name="socialmedia[gpay][text]" placeholder="Display text" class="form-control mt-3 mb-4"
                         />
                     </div>
                     <div id="Menu20" style="display: none;">
@@ -597,10 +597,10 @@
                         />
                     </div>
                     <input
-                        type="date" id="email" name="socialmedia" value="gpay.me/" class="form-control mt-3"
+                        type="date" id="email" name="socialmedia[calender][id]" value="" placeholder="gpay.me/" class="form-control mt-3"
                         />
                     <input
-                        type="text" id="email" name="socialmedia" placeholder="Display text" class="form-control mt-3 mb-4"
+                        type="text" id="email" name="socialmedia[calender][text]" placeholder="Display text" class="form-control mt-3 mb-4"
                         />
                     </div>
                     <div id="Menu21" style="display: none;">
@@ -617,10 +617,10 @@
                         />
                     </div>
                     <input
-                        type="text" id="email" name="socialmedia" placeholder="google" class="form-control mt-3"
+                        type="text" id="email" name="socialmedia[google][id]" placeholder="google" class="form-control mt-3"
                         />
                     <input
-                        type="text" id="email" name="socialmedia" placeholder="Display text" class="form-control mt-3 mb-4"
+                        type="text" id="email" name="socialmedia[google][text]" placeholder="Display text" class="form-control mt-3 mb-4"
                         />
                     </div>
                     <div id="Menu22" style="display: none;">
@@ -637,10 +637,10 @@
                         />
                     </div>
                     <input
-                        type="text" id="email" name="socialmedia" value="behance.net/" class="form-control mt-3"
+                        type="text" id="email" name="socialmedia[behance][id]" value="" placeholder="behance.net/" class="form-control mt-3"
                         />
                     <input
-                        type="text" id="email" name="socialmedia" placeholder="Display text" class="form-control mt-3 mb-4"
+                        type="text" id="email" name="socialmedia[behance][text]" placeholder="Display text" class="form-control mt-3 mb-4"
                         />
                     </div>
                     <div id="Menu23" style="display: none;">
@@ -657,10 +657,10 @@
                         />
                     </div>
                     <input
-                        type="text" id="email" name="socialmedia" value="Dribble.com/" class="form-control mt-3"
+                        type="text" id="email" name="socialmedia[dribbble][id]" value="" placeholder="Dribble.com/" class="form-control mt-3"
                         />
                     <input
-                        type="text" id="email" name="socialmedia" placeholder="Display text" class="form-control mt-3 mb-4"
+                        type="text" id="email" name="socialmedia[dribbble][text]" placeholder="Display text" class="form-control mt-3 mb-4"
                         />
                     </div>
                     <div id="Menu24" style="display: none;">
@@ -677,7 +677,7 @@
                         />
                     </div>
                     <input
-                        type="text" id="email" name="socialmedia" placeholder="SkypeID" class="form-control mt-3 mb-4"
+                        type="text" id="email" name="socialmedia[skype][id]" placeholder="SkypeID" class="form-control mt-3 mb-4"
                         />
                     </div>
                     <div id="Menu25" style="display: none;">
@@ -694,7 +694,7 @@
                         />
                     </div>
                     <input
-                        type="text" id="email" name="socialmedia" placeholder="SkypeID" class="form-control mt-3 mb-4"
+                        type="text" id="email" name="socialmedia[pdf][id]" placeholder="PDF.file" class="form-control mt-3 mb-4"
                         />
                     </div>
                     <div id="Menu26" style="display: none;">
@@ -711,10 +711,10 @@
                         />
                     </div>
                     <input
-                        type="text" id="email" name="socialmedia" placeholder="threads" class="form-control mt-3"
+                        type="text" id="email" name="socialmedia[threads][id]" placeholder="threads" class="form-control mt-3"
                         />
                     <input
-                        type="text" id="email" name="socialmedia" placeholder="Display text" class="form-control mt-3 mb-4"
+                        type="text" id="email" name="socialmedia[threads][text]" placeholder="Display text" class="form-control mt-3 mb-4"
                         />
                     </div>
                 </form>
@@ -1081,7 +1081,7 @@
               $("#big-image img").eq(index).show().siblings().hide();
             });
           });
-          var url = "public/images/color/";
+          var url = "public/image/color/";
           $(".type-sel").on("click", function () {
             var src = $(this).attr("src");
             var typ = $(this).attr("data-type");
