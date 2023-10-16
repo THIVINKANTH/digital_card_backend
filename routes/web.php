@@ -52,6 +52,8 @@ Route::post('create_card',[CardsController::class,'insert_card']);
 
 //card list
 Route::get('list',[CardsController::class,'cards_list']);
+Route::get('cardname/{id}',[CardsController::class,'card_type']);
+
 
 //update cards
 Route::get('update/{id}',[CardsController::class,'edit_card']);

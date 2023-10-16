@@ -139,19 +139,19 @@
 }
 .bi-whatsapp {
     display: inline-block;
-    background-color: #d06189;
+    background-color: #418ace;
     border-radius: 60px;
     padding: 0.5em 0.6em;
 }
-.mail {
+.bi-envelope {
     display: inline-block;
-    background-color: #d06189;
+    background-color: #418ace;
     border-radius: 60px;
     padding: 0.5em 0.6em;
 }
 .bi-telephone {
     display: inline-block;
-    background-color: #d06189;
+    background-color: #418ace;
     border-radius: 60px;
     padding: 0.5em 0.6em;
 }

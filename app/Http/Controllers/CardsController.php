@@ -59,7 +59,7 @@ class CardsController extends Controller
             'social_media_links' =>$socialmedia,
             'others' => $others
         ]);
-        return redirect('/cards')->with('message','Digital Card Created Successfully');
+        return redirect('list')->with('message','Digital Card Created Successfully');
     }
 
 
@@ -68,11 +68,20 @@ class CardsController extends Controller
     {
         $id = Auth::user()->id;
         $list = Cards::where('user_id',$id)->get();
+        // $social =Cards::json_decode(socialmedia,true)['insta'];
         // print_r(Cards::where('user_id',$id)->get());
         // exit;
         return view('app.cards',compact('list'));
     }
-
+    //card name
+    public function card_type($id)
+    {
+        //$name = DB::select("select 'photo','card_logo','card_frame','card_background','card_color','first_name','middle_name','last_name','desgination','social_media_links','others' from cards where id=?",[$id]);
+        $name = DB::select("select * from cards where id=?",[$id]);
+        print_r($name);
+        exit;
+        return view('app.cards',compact('name'));
+    }
     //edit card
     public function edit_card($id)
     {

@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="resources\css\sidebar.css" />
     <link rel="stylesheet" href="resources\css\add-new.css" />
 </head>
-<body style=" background-color: #f4eeeb;">
+<body style="background-color: #f4eeeb">
     <!-- navbar -->
     @include('layouts.header');
     <!-- sidebar -->
@@ -139,7 +139,7 @@
               </div>
             </div>
             <div class="row mt-4 ">
-              <form action="{{ url('create_card') }}" method="POST">
+              <form action="{{ url('create_card') }}" method="POST" >
                     @csrf
                     <div class="mx-2">
                         <label for="names" class="form-label">Label this Card</label>
@@ -180,6 +180,7 @@
                         <p id="socials">Social Media Links</p>
                         <a href="#social-body" id="badge" type="button">Add Badge</a>
                     </div>
+                    <div id="web">
                     <div id="Menu1" style="display: none" class="mx-2 mt-3">
                     <div>
                         <img
@@ -717,6 +718,7 @@
                         type="text" id="email" name="socialmedia[threads][text]" placeholder="Display text" class="form-control mt-3 mb-4"
                         />
                     </div>
+                    </div>
                 </form>
             </div>
           </div>
@@ -886,40 +888,40 @@
             <p id="gen">General</p>
             <div class="row justify-content-evenly mb-3">
               <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3 card-1 mx-1" id="add-details">
-                <div onclick="toggleVisibility('Menu1');" >
+                <a href="#web" onclick="toggleVisibility('Menu1');" class="color">
                   <i class="bi bi-buildings" id="add-icon"></i>
                   <p id="add-text">Company</p>
-                </div>
+                </a>
               </div>
               <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3 card-1 mx-1" id="add-details">
-                <div onclick="toggleVisibility('Menu2');" >
+                <a href="#web" onclick="toggleVisibility('Menu2');" class="color">
                   <i class="bi bi-browser-chrome" id="add-icon"></i>
                   <p id="add-text">Website</p>
-                </div>
+                </a>
               </div>
               <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3 card-1 mx-1" id="add-details">
-                <div onclick="toggleVisibility('Menu3');" >
+                <a href="#web" onclick="toggleVisibility('Menu3');" class="color">
                   <i class="bi bi-telephone-fill" id="add-icon"></i>
                   <p id="add-text">Phone</p>
-                </div>
+                </a>
               </div>
               <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3 card-1 mx-1" id="add-details">
-                <div onclick="toggleVisibility('Menu4');" >
+                <a href="#web" onclick="toggleVisibility('Menu4');" class="color">
                   <i class="bi bi-envelope-at" id="add-icon"></i>
                   <p id="add-text">E mail</p>
-                </div>
+                </a>
               </div>
               <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3 card-1 mx-1" id="add-details">
-                <div onclick="toggleVisibility('Menu5');" >
+                <a href="#web" onclick="toggleVisibility('Menu5');" class="color">
                   <i class="bi bi-geo-alt-fill" id="add-icon"></i>
                   <p id="add-text">Address</p>
-                </div>
+                </a>
               </div>
               <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3 mx-1" id="add-details">
-                <div onclick="toggleVisibility('Menu6');" >
+                <a href="#web" onclick="toggleVisibility('Menu6');" class="color">
                   <i class="bi bi-link-45deg" id="add-icon"></i>
                   <p id="add-text">Link</p>
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -928,113 +930,113 @@
             <p id="links-head">Add a link to let people connect with you</p>
             <div class="row justify-content-evenly mb-3">
               <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3" id="links-body">
-                <div onclick="toggleVisibility('Menu7');" >
+                <a href="#web" onclick="toggleVisibility('Menu7');" >
                   <img src="public\image\add\Frame 1405.png" alt="insta" id="link-img">
-                </div>
+                </a>
               </div>
               <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3" id="links-body">
-                <div onclick="toggleVisibility('Menu8');" >
+                <a href="#web" onclick="toggleVisibility('Menu8');" >
                   <img src="public\image\add\Frame 1415.png" alt="insta" id="link-img">
-                </div>
+                </a>
               </div>
               <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3" id="links-body">
-                <div onclick="toggleVisibility('Menu9');" >
+                <a href="#web" onclick="toggleVisibility('Menu9');" >
                   <img src="public\image\add\Frame 1406.png" alt="insta" id="link-img">
-                </div>
+                </a>
               </div>
               <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3" id="links-body">
-                <div onclick="toggleVisibility('Menu10');" >
+                <a href="#web" onclick="toggleVisibility('Menu10');" >
                   <img src="public\image\add\Frame 1417.png" alt="insta" id="link-img">
-                </div>
+                </a>
               </div>
               <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3" id="links-body">
-                <div onclick="toggleVisibility('Menu11');" >
+                <a href="#web" onclick="toggleVisibility('Menu11');" >
                   <img src="public\image\add\Frame 1416.png" alt="insta" id="link-img">
-                </div>
+                </a>
               </div>
             </div>
             <!-- row-2 -->
             <div class="row justify-content-evenly mb-3">
               <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3" id="links-body">
-                <div onclick="toggleVisibility('Menu12');" >
+                <a href="#web" onclick="toggleVisibility('Menu12');" >
                   <img src="public\image\add\Frame 1418.png" alt="insta" id="link-img">
-                </div>
+                </a>
               </div>
               <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3" id="links-body">
-                <div onclick="toggleVisibility('Menu13');" >
+                <a href="#web" onclick="toggleVisibility('Menu13');" >
                   <img src="public\image\add\Frame 1407.png" alt="insta" id="link-img">
-                </div>
+                </a>
               </div>
               <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3" id="links-body">
-                <div onclick="toggleVisibility('Menu14');" >
+                <a href="#web" onclick="toggleVisibility('Menu14');" >
                   <img src="public\image\add\Frame 1408.png" alt="insta" id="link-img">
-                </div>
+                </a>
               </div>
               <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3" id="links-body">
-                <div onclick="toggleVisibility('Menu15');" >
+                <a href="#web" onclick="toggleVisibility('Menu15');" >
                   <img src="public\image\add\Frame 1409.png" alt="insta" id="link-img">
-                </div>
+                </a>
               </div>
               <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3" id="links-body">
-                <div onclick="toggleVisibility('Menu16');" >
+                <a href="#web" onclick="toggleVisibility('Menu16');" >
                   <img src="public\image\add\Frame 1413.png" alt="insta" id="link-img">
-                </div>
+                </a>
               </div>
             </div>
             <!-- row-3 -->
             <div class="row justify-content-evenly mb-3">
               <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3" id="links-body">
-                <div onclick="toggleVisibility('Menu17');" >
+                <a href="#web" onclick="toggleVisibility('Menu17');" >
                   <img src="public\image\add\Frame 1421.png" alt="insta" id="link-img">
-                </div>
+                </a>
               </div>
               <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3" id="links-body">
-                <div onclick="toggleVisibility('Menu18');" >
+                <a href="#web" onclick="toggleVisibility('Menu18');" >
                   <img src="public\image\add\Frame 1419.png" alt="insta" id="link-img">
-                </div>
+                </a>
               </div>
               <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3" id="links-body">
-                <div onclick="toggleVisibility('Menu19');" >
+                <a href="#web" onclick="toggleVisibility('Menu19');" >
                   <img src="public\image\add\Frame 1420.png" alt="insta" id="link-img">
-                </div>
+                </a>
               </div>
               <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3" id="links-body">
-                <div onclick="toggleVisibility('Menu20');" >
+                <a href="#web" onclick="toggleVisibility('Menu20');" >
                   <img src="public\image\add\Frame 1422.png" alt="insta" id="link-img">
-                </div>
+                </a>
               </div>
               <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3" id="links-body">
-                <div onclick="toggleVisibility('Menu21');" >
+                <a href="#web" onclick="toggleVisibility('Menu21');" >
                   <img src="public\image\add\Frame 1412.png" alt="insta" id="link-img">
-                </div>
+                </a>
               </div>
             </div>
             <!-- row-4 -->
             <div class="row justify-content-evenly mb-5">
               <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3" id="links-body">
-                <div onclick="toggleVisibility('Menu22');" >
+                <a href="#web" onclick="toggleVisibility('Menu22');" >
                   <img src="public\image\add\Frame 1410.png" alt="insta" id="link-img">
-                </div>
+                </a>
               </div>
               <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3" id="links-body">
-                <div onclick="toggleVisibility('Menu23');" >
+                <a href="#web" onclick="toggleVisibility('Menu23');" >
                   <img src="public\image\add\Frame 1411.png" alt="insta" id="link-img">
-                </div>
+                </a>
               </div>
               <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3" id="links-body">
-                <div onclick="toggleVisibility('Menu24');" >
+                <a href="#web" onclick="toggleVisibility('Menu24');" >
                   <img src="public\image\add\Frame 1414.png" alt="insta" id="link-img">
-                </div>
+                </a>
               </div>
               <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3" id="links-body">
-                <div onclick="toggleVisibility('Menu25');" >
+                <a href="#web" onclick="toggleVisibility('Menu25');" >
                   <img src="public\image\add\Frame 1423.png" alt="insta" id="link-img">
-                </div>
+                </a>
               </div>
               <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3" id="links-body">
-                <div onclick="toggleVisibility('Menu26');" >
+                <a href="#web" onclick="toggleVisibility('Menu26');" >
                   <img src="public\image\add\Frame 1424.png" alt="insta" id="link-img">
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -1043,39 +1045,7 @@
     </div>
 </section>
     <script>
-
-
-        let sidebar = document.querySelector(".sidebar");
-         let closeBtn = document.querySelector("#btn");
-         let searchBtn = document.querySelector(".bx-search");
-
-         closeBtn.addEventListener("click", () => {
-         sidebar.classList.toggle("open");
-         menuBtnChange(); //calling the function(optional)
-         });
-
-         searchBtn.addEventListener("click", () => {
-         // Sidebar open when you click on the search iocn
-         sidebar.classList.toggle("open");
-         menuBtnChange(); //calling the function(optional)
-         });
-
-         // following are the code to change sidebar button(optional)
-         function menuBtnChange() {
-         if (sidebar.classList.contains("open")) {
-           closeBtn.classList.replace("bx-menu", "bx-menu-alt-right"); //replacing the iocns class
-         } else {
-           closeBtn.classList.replace("bx-menu-alt-right", "bx-menu"); //replacing the iocns class
-         }
-         }
-
-         $( function() {
-         $( "#datepicker" ).datepicker();
-         } );
-
-
-
-                  $(function () {
+  $(function () {
             $("#big-image3 img:eq(0)").nextAll().hide();
             $(".small-images img").click(function (e) {
               var index = $(this).index();
@@ -1177,6 +1147,33 @@
          }
 
 
+         let sidebar = document.querySelector(".sidebar");
+         let closeBtn = document.querySelector("#btn");
+         let searchBtn = document.querySelector(".bx-search");
+
+         closeBtn.addEventListener("click", () => {
+         sidebar.classList.toggle("open");
+         menuBtnChange(); //calling the function(optional)
+         });
+
+         searchBtn.addEventListener("click", () => {
+         // Sidebar open when you click on the search iocn
+         sidebar.classList.toggle("open");
+         menuBtnChange(); //calling the function(optional)
+         });
+
+         // following are the code to change sidebar button(optional)
+         function menuBtnChange() {
+         if (sidebar.classList.contains("open")) {
+           closeBtn.classList.replace("bx-menu", "bx-menu-alt-right"); //replacing the iocns class
+         } else {
+           closeBtn.classList.replace("bx-menu-alt-right", "bx-menu"); //replacing the iocns class
+         }
+         }
+
+         $( function() {
+         $( "#datepicker" ).datepicker();
+         } );
 
 
 
