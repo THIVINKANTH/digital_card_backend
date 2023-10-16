@@ -77,8 +77,10 @@
                     <div class="card-title mx-auto d-flex mt-3">
                         <h5 class="card-tit mt-1">Cards</h5><a href=""><i class="bi bi-plus-circle fs-3 mx-2" style="color:black"></i></a>
                     </div>
-                    <h6 class="card-bp my-3" data-bs-toggle="tab">Personal</h6>
-                    <h6 class="card-bw my-2 me-4 mb-5">Work</h6>
+                    @foreach ($list as $lists)
+                    <h6 class="card-bp my-3" data-bs-toggle="tab">{{ $lists->card_name }}</h6>
+                    {{-- <h6 class="card-bw my-2 me-4 mb-5">Work</h6> --}}
+                    @endforeach
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-9 col-lg-6 text-center">
@@ -114,7 +116,7 @@
                                     <div class="card ms-5" id="card-3">
                                         <img src="public\image\cards\Rectangle 2010.png" alt="">
                                         <div class="text-start ms-4 my-3">
-                                            <h5 class="nme">Praveen</h5>
+                                            <h5 class="nme">{{ $lists->first_name }}</h5>
                                             <h6 class="rle">Sales Manager</h6>
                                         </div>
                                         <div class="row justify-content-center">
@@ -254,7 +256,7 @@
             $(show).removeClass("hide").siblings().addClass("hide");
             });
 
-            let sidebar = document.querySelector(".sidebar");
+         let sidebar = document.querySelector(".sidebar");
          let closeBtn = document.querySelector("#btn");
          let searchBtn = document.querySelector(".bx-search");
 

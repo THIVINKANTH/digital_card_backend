@@ -40,10 +40,10 @@ Route::get('edit',function()
 Route::get('settings',function(){
     return view('app.Settings');
 });
-Route::get('cards',function()
-{
-    return view('app.cards');
-});
+// Route::get('cards',function()
+// {
+//     return view('app.cards');
+// });
 
 
 // create cards

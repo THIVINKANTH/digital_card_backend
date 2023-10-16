@@ -16,7 +16,7 @@
     <ul class="nav-list">
 
     <li class="h">
-        <a href="{{ url('cards') }}" id="card" onclick="myFunction()">
+        <a href="{{ url('list') }}" id="card" onclick="myFunction()">
         <img src="public\image\home\Component44.png" alt="">
         <span class="links_name cards">Cards</span>
         </a>

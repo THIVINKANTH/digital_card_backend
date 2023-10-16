@@ -885,37 +885,37 @@
             <p id="add-more" class="mt-3">Add more information:</p>
             <p id="gen">General</p>
             <div class="row justify-content-evenly mb-3">
-              <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3 card-1" id="add-details">
+              <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3 card-1 mx-1" id="add-details">
                 <div onclick="toggleVisibility('Menu1');" >
                   <i class="bi bi-buildings" id="add-icon"></i>
                   <p id="add-text">Company</p>
                 </div>
               </div>
-              <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3 card-1" id="add-details">
+              <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3 card-1 mx-1" id="add-details">
                 <div onclick="toggleVisibility('Menu2');" >
                   <i class="bi bi-browser-chrome" id="add-icon"></i>
                   <p id="add-text">Website</p>
                 </div>
               </div>
-              <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3 card-1" id="add-details">
+              <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3 card-1 mx-1" id="add-details">
                 <div onclick="toggleVisibility('Menu3');" >
                   <i class="bi bi-telephone-fill" id="add-icon"></i>
                   <p id="add-text">Phone</p>
                 </div>
               </div>
-              <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3 card-1" id="add-details">
+              <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3 card-1 mx-1" id="add-details">
                 <div onclick="toggleVisibility('Menu4');" >
                   <i class="bi bi-envelope-at" id="add-icon"></i>
                   <p id="add-text">E mail</p>
                 </div>
               </div>
-              <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3 card-1" id="add-details">
+              <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3 card-1 mx-1" id="add-details">
                 <div onclick="toggleVisibility('Menu5');" >
                   <i class="bi bi-geo-alt-fill" id="add-icon"></i>
                   <p id="add-text">Address</p>
                 </div>
               </div>
-              <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3 " id="add-details">
+              <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3 mx-1" id="add-details">
                 <div onclick="toggleVisibility('Menu6');" >
                   <i class="bi bi-link-45deg" id="add-icon"></i>
                   <p id="add-text">Link</p>
@@ -923,7 +923,7 @@
               </div>
             </div>
           </div>
-          <div class="row ms-xl-2 ms-lg-5 ms-md-3 ms-5 mt-3" id="social-body">
+          <div class="row ms-xl-2 ms-lg-5 ms-md-3 ms-5 mt-3 mb-5 mx-2" id="social-body">
             <p id="add-more" class="mt-3">Social Links</p>
             <p id="links-head">Add a link to let people connect with you</p>
             <div class="row justify-content-evenly mb-3">
@@ -1010,7 +1010,7 @@
               </div>
             </div>
             <!-- row-4 -->
-            <div class="row justify-content-evenly mb-3">
+            <div class="row justify-content-evenly mb-5">
               <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3" id="links-body">
                 <div onclick="toggleVisibility('Menu22');" >
                   <img src="public\image\add\Frame 1410.png" alt="insta" id="link-img">
@@ -1041,8 +1041,40 @@
         </div>
       </div>
     </div>
-            </section>
-            <script>
+</section>
+    <script>
+
+
+        let sidebar = document.querySelector(".sidebar");
+         let closeBtn = document.querySelector("#btn");
+         let searchBtn = document.querySelector(".bx-search");
+
+         closeBtn.addEventListener("click", () => {
+         sidebar.classList.toggle("open");
+         menuBtnChange(); //calling the function(optional)
+         });
+
+         searchBtn.addEventListener("click", () => {
+         // Sidebar open when you click on the search iocn
+         sidebar.classList.toggle("open");
+         menuBtnChange(); //calling the function(optional)
+         });
+
+         // following are the code to change sidebar button(optional)
+         function menuBtnChange() {
+         if (sidebar.classList.contains("open")) {
+           closeBtn.classList.replace("bx-menu", "bx-menu-alt-right"); //replacing the iocns class
+         } else {
+           closeBtn.classList.replace("bx-menu-alt-right", "bx-menu"); //replacing the iocns class
+         }
+         }
+
+         $( function() {
+         $( "#datepicker" ).datepicker();
+         } );
+
+
+
                   $(function () {
             $("#big-image3 img:eq(0)").nextAll().hide();
             $(".small-images img").click(function (e) {
@@ -1259,37 +1291,6 @@
          })();
 
 
-
-
-
-
-          let sidebar = document.querySelector(".sidebar");
-         let closeBtn = document.querySelector("#btn");
-         let searchBtn = document.querySelector(".bx-search");
-
-         closeBtn.addEventListener("click", () => {
-         sidebar.classList.toggle("open");
-         menuBtnChange(); //calling the function(optional)
-         });
-
-         searchBtn.addEventListener("click", () => {
-         // Sidebar open when you click on the search iocn
-         sidebar.classList.toggle("open");
-         menuBtnChange(); //calling the function(optional)
-         });
-
-         // following are the code to change sidebar button(optional)
-         function menuBtnChange() {
-         if (sidebar.classList.contains("open")) {
-           closeBtn.classList.replace("bx-menu", "bx-menu-alt-right"); //replacing the iocns class
-         } else {
-           closeBtn.classList.replace("bx-menu-alt-right", "bx-menu"); //replacing the iocns class
-         }
-         }
-
-         $( function() {
-         $( "#datepicker" ).datepicker();
-         } );
       </script>
       <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
       <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
