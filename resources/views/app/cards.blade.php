@@ -125,6 +125,27 @@
                                         </div>
                                         <div class="row justify-content-center">
                                             <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+                                                @php
+                                                    $social = json_decode($lists->social_media_links,true);
+                                                    $social_links = count($social);
+                                                    // print_r($social['insta']['id']);
+                                                    for ($i=0; $i <= $social_links ; $i++)
+                                                    {
+                                                        if ($social['insta']['id'] != null)
+                                                        {
+                                                            print_r($social['insta']['id']);
+                                                            break;
+                                                        }
+                                                        else {
+                                                            echo "null";
+                                                        }
+
+                                                    }
+                                                @endphp
+                                                @php
+                                                   $social = json_decode($lists->social_media_links,true);
+                                                   print_r($social['insta']['id']);
+                                                @endphp
                                                 <div class="wp-num d-flex mx-1">
                                                     <div class="row">
                                                         <div class="col-4"><i class="bi bi-whatsapp text-light ms-3 my-1 "></i></div>
