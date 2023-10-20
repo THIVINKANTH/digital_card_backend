@@ -16,9 +16,9 @@
 </head>
 <body >
     <!-- navbar -->
-    @include('layouts.header');
+    @include('layouts.header')
     <!-- sidebar -->
-    @include('layouts.sidebar');
+    @include('layouts.sidebar')
     <!-- home -->
     <div class="container-fluid home-section">
         <div class="row justify-content-center">
@@ -68,7 +68,9 @@
                 </div>
             </div>
         </div>
+
         <div class="row justify-content-center">
+            @if(isset($list))
             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 my-3">
                 <div class="card my-2 text-center" id="card-1">
                     <div class="card-title mx-auto d-flex mt-3">
@@ -86,6 +88,8 @@
                     </div> --}}
                 </div>
             </div>
+            @endif
+
             <div class="col-xs-12 col-sm-12 col-md-9 col-lg-6 text-center">
                 <div class="card my-4" id="card-2">
                     <div class="map-container">
@@ -114,7 +118,8 @@
                     </div>
                     <div class="map-container ">
                         <div class="personal">
-                        <div class="row justify-content-start my-4 darwin  initialmsg">
+                            @if(isset($list))
+                         <div class="row justify-content-start my-4 darwin  initialmsg">
                                 <div class="col-xs-5 col-sm-5 col-md-7 col-lg-7">
                                     <div class="card ms-5" id="card-3">
                                         @foreach ($list as $lists)
@@ -125,34 +130,31 @@
                                         </div>
                                         <div class="row justify-content-center">
                                             <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
-                                                @php
+                                                <?php
                                                     $social = json_decode($lists->social_media_links,true);
                                                     $social_links = count($social);
                                                     // print_r($social['insta']['id']);
-                                                    for ($i=0; $i <= $social_links ; $i++)
-                                                    {
-                                                        if ($social['insta']['id'] != null)
+                                                    $keys = array_keys($social);
+                                                    foreach ($keys as $key => $value) {
+                                                        if (!empty($social[$value]['id']))
                                                         {
-                                                            print_r($social['insta']['id']);
-                                                            break;
-                                                        }
-                                                        else {
-                                                            echo "null";
-                                                        }
 
-                                                    }
-                                                @endphp
-                                                @php
-                                                   $social = json_decode($lists->social_media_links,true);
-                                                   print_r($social['insta']['id']);
-                                                @endphp
-                                                <div class="wp-num d-flex mx-1">
+                                                ?>
+                                                <div class="wp-num d-flex mx-1 my-2">
                                                     <div class="row">
-                                                        <div class="col-4"><i class="bi bi-whatsapp text-light ms-3 my-1 "></i></div>
-                                                        <div class="col-8"><h6 class="num mt-3">{{ $lists->social_media_links }}</h6></div>
+                                                        <div class="col-4 "><i class="{{ $value }} text-light ms-1 "></i><img src="{{ asset('public/image/add/'.$value.'.png') }}" class="mt-1"/></div>
+                                                        <div class="col-8"><h6 class="num mt-3 ms-0">{{ $social[$value]['id'] }}</h6></div>
                                                     </div>
                                                 </div>
-                                                <div class="wp-num d-flex mx-1 my-3">
+                                                <?php
+                                                            // print_r($social[$value]['id']);
+
+                                                        }
+                                                    }
+                                                    // exit;
+
+                                                ?>
+                                                {{-- <div class="wp-num d-flex mx-1 my-3">
                                                     <div class="row">
                                                         <div class="col-3"><i class="bi bi-envelope text-light ms-3 my-1"></i></div>
                                                         <div class="col-9"><h6 class="num mt-3">praveen3@gmail.com</h6></div>
@@ -163,13 +165,14 @@
                                                         <div class="col-4"><i class="bi bi-telephone text-light ms-3 my-1"></i></div>
                                                         <div class="col-8"><h6 class="num mt-3">Make a call</h6></div>
                                                     </div>
-                                                </div>
+                                                </div> --}}
                                             </div>
                                         </div>
                                         @endforeach
                                     </div>
                                 </div>
                             </div>
+                            @endif
                             <div class="row justify-content-start my-4 ptown hide">
                                 <div class="col-xs-5 col-sm-5 col-md-7 col-lg-7">
                                     <div class="card ms-5" id="card-3">
@@ -271,7 +274,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="inner-basic division-details work hide">
+                        {{-- <div class="inner-basic division-details work hide">
                             <div class="row justify-content-start my-4 darwin  initialmsg">
                                 <div class="col-xs-5 col-sm-5 col-md-7 col-lg-7">
                                     <div class="card ms-5" id="card-3">
@@ -405,11 +408,12 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
     <script>
            $(document).on('click', '.map-point-sm', function() {

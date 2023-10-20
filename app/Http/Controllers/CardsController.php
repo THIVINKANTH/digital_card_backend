@@ -78,8 +78,8 @@ class CardsController extends Controller
     {
         //$name = DB::select("select 'photo','card_logo','card_frame','card_background','card_color','first_name','middle_name','last_name','desgination','social_media_links','others' from cards where id=?",[$id]);
         $name = DB::select("select * from cards where id=?",[$id]);
-        print_r($name);
-        exit;
+        // print_r($name);
+        // exit;
         return view('app.cards',compact('name'));
     }
     //edit card

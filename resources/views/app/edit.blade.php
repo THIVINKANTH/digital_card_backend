@@ -21,9 +21,9 @@
   </head>
   <body >
     <!-- navbar -->
-    @include('layouts.header');
+    @include('layouts.header')
     <!-- sidebar -->
-    @include('layouts.sidebar');
+    @include('layouts.sidebar')
     <!-- home -->
     <div class="home-section">
       <div class="container ">

@@ -18,9 +18,9 @@
 </head>
 <body style="background-color: #f4eeeb">
      <!-- navbar -->
-     @include('layouts.header');
+     @include('layouts.header')
      <!-- sidebar -->
-     @include('layouts.sidebar');
+     @include('layouts.sidebar')
 
      <!-- home -->
         <div class="container">

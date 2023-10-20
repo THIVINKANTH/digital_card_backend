@@ -21,9 +21,9 @@
 </head>
 <body style="background-color: #f4eeeb">
     <!-- navbar -->
-    @include('layouts.header');
+    @include('layouts.header')
     <!-- sidebar -->
-    @include('layouts.sidebar');
+    @include('layouts.sidebar')
     <!-- home -->
     <section class="home-section">
     <div class="container" >
@@ -931,7 +931,7 @@
             <div class="row justify-content-evenly mb-3">
               <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3" id="links-body">
                 <a href="#web" onclick="toggleVisibility('Menu7');" >
-                  <img src="public\image\add\Frame 1405.png" alt="insta" id="link-img">
+                  <img src="public\image\add\insta1.png" alt="insta" id="link-img">
                 </a>
               </div>
               <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3" id="links-body">
