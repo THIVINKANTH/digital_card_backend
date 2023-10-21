@@ -21,40 +21,46 @@
   </head>
   <body >
     <!-- navbar -->
-    @include('layouts.header')
+    @include('layouts.header');
     <!-- sidebar -->
-    @include('layouts.sidebar')
+    @include('layouts.sidebar');
     <!-- home -->
     <div class="home-section">
       <div class="container ">
-        <div class="row justify-content-center">
-          <div id="edit-head" class="mt-4">
-            <div class="row justify-content-center">
+        <div class="row justify-content-center  ms-xl-2 ms-lg-5 ms-md-3 ms-5 mt-3 mx-2 mt-3">
+            <div class="col-xs-12 col-md-8 col-lg-10">
+          <div id="edit-head" class="mt-4 ms-3">
+            <div class="row justify-content-center ms-3">
               <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                 <div class="row justify-content-start mb-2">
-                  <div id="icon-back" class="mt-1 ms-5">
+                  <div id="icon-back" class="mt-1 ms-2">
                     <a href="{{url('home')}}" class="bi bi-arrow-left" id="head-icon"></a>
                   </div>
                   <div id="icon-back" class="mt-1 ms-2">
                     <i class="bi bi-trash3" id="head-icon"></i>
                   </div>
-                  <div id="icon-back" class="ms-4 mt-1">
+                  <div id="icon-back" class="ms-2 mt-1">
                     <i class="bi bi-copy " id="head-icon"></i>
                   </div>
                 </div>
               </div>
               <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                <div class="text-end mt-3">
-                  <button id="head-btn" class="me-lg-3 me-md-3 me-5">Cancel</button>
-                  <button  class="change">Save Changes</button>
+                <div class="row justify-content-center">
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 mt-3">
+                        <button id="head-btn" class="me-lg-3 me-md-3 me-5">Cancel</button>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 mt-3">
+                        <button  class="change ">Save Changes</button>
+                    </div>
                 </div>
               </div>
             </div>
           </div>
+          </div>
         </div>
-        <div class="row justify-content-center mt-5">
+        <div class="row justify-content-center mt-5 ms-lg-3 ms-md-0 ms-5 mb-5">
           <div class="col-xs-12 col-sm-12 col-md-4 col-lg-5 mb-5 text-start">
-            <div class="rectangle-div ms-5">
+            <div class="rectangle-div ms-3 ">
               <div id="big-imagethe">
                 <img
                 src="data:image/png;base64,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"
@@ -66,7 +72,7 @@
               </div>
               <!-- <img src="public\image\contact\Mask group2.png" alt="" class="mask"/> -->
               <img
-                src="public\images\contact\logo.png"
+                src="public\image\contact\logo.png"
                 alt="logo"
                 class="float-end me-3"
                 style="margin-top: -16%"
@@ -81,67 +87,67 @@
                     <img
                       class="android-large-20-child group-icon"
                       alt=""
-                      src="public\images\color\Group 231.png"
+                      src="public\image\color\Group 231.png"
                       id="contact-icon"
                       />
                     <img
                       class="android-large-20-child group-icon"
                       alt=""
-                      src="public\images\color\whatsapp-pink.png"
+                      src="public\image\color\whatsapp-pink.png"
                       id="contact-icon"
                       />
                     <img
                       class="android-large-20-child group-icon"
                       alt=""
-                      src="public\images\color\whatsapp-red.png"
+                      src="public\image\color\whatsapp-red.png"
                       id="contact-icon"
                       />
                     <img
                       class="android-large-20-child group-icon"
                       alt=""
-                      src="public\images\color\whatsapp-brown.png"
+                      src="public\image\color\whatsapp-brown.png"
                       id="contact-icon"
                       />
                     <img
                       class="android-large-20-child group-icon"
                       alt=""
-                      src="public\images\color\whatsapp-yellow.png"
+                      src="public\image\color\whatsapp-yellow.png"
                       id="contact-icon"
                       />
                     <img
                       class="android-large-20-child group-icon"
                       alt=""
-                      src="public\images\color\whatsapp-green.png"
+                      src="public\image\color\whatsapp-green.png"
                       id="contact-icon"
                       />
                     <img
                       class="android-large-20-child group-icon"
                       alt=""
-                      src="public\images\color\whatsapp-lightblue.png"
+                      src="public\image\color\whatsapp-lightblue.png"
                       id="contact-icon"
                       />
                     <img
                       class="android-large-20-child group-icon"
                       alt=""
-                      src="public\images\color\Group 231.png"
+                      src="public\image\color\Group 231.png"
                       id="contact-icon"
                       />
                     <img
                       class="android-large-20-child group-icon"
                       alt=""
-                      src="public\images\color\whatsapp-deepblue.png"
+                      src="public\image\color\whatsapp-deepblue.png"
                       id="contact-icon"
                       />
                     <img
                       class="android-large-20-child group-icon"
                       alt=""
-                      src="public\images\color\whatsapp-purple.png"
+                      src="public\image\color\whatsapp-purple.png"
                       id="contact-icon"
                       />
                     <img
                       class="android-large-20-child group-icon"
                       alt=""
-                      src="public\images\color\whatsapp-black.png"
+                      src="public\image\color\whatsapp-black.png"
                       id="contact-icon"
                       />
                   </div>
@@ -152,138 +158,138 @@
                     <img
                       class="android-large-20-child3"
                       alt=""
-                      src="public\images\settings\Group 230.png"
+                      src="public\image\settings\Group 230.png"
                       id="contact-icon"
                       />
                     <img
                       class="android-large-20-child3"
                       alt=""
-                      src="public\images\color\pinkmap.png"
+                      src="public\image\color\pinkmap.png"
                       id="contact-icon"
                       />
                     <img
                       class="android-large-20-child3"
                       alt=""
-                      src="public\images\color\Group 378 (1).png"
+                      src="public\image\color\Group 378 (1).png"
                       id="contact-icon"
                       />
                     <img
                       class="android-large-20-child3"
                       alt=""
-                      src="public\images\color\Group 378 (2).png"
+                      src="public\image\color\Group 378 (2).png"
                       id="contact-icon"
                       />
                     <img
                       class="android-large-20-child3"
                       alt=""
-                      src="public\images\color\Group 378 (3).png"
+                      src="public\image\color\Group 378 (3).png"
                       id="contact-icon"
                       />
                     <img
                       class="android-large-20-child3"
                       alt=""
-                      src="public\images\color\Group 378 (4).png"
+                      src="public\image\color\Group 378 (4).png"
                       id="contact-icon"
                       />
                     <img
                       class="android-large-20-child3"
                       alt=""
-                      src="public\images\color\Group 378 (5).png"
+                      src="public\image\color\Group 378 (5).png"
                       id="contact-icon"
                       />
                     <img
                       class="android-large-20-child3"
                       alt=""
-                      src="public\images\color\Group 233.png"
+                      src="public\image\color\Group 233.png"
                       id="contact-icon"
                       />
                     <img
                       class="android-large-20-child3"
                       alt=""
-                      src="public\images\color\Group 378 (6).png"
+                      src="public\image\color\Group 378 (6).png"
                       id="contact-icon"
                       />
                     <img
                       class="android-large-20-child3"
                       alt=""
-                      src="public\images\color\Group 378 (7).png"
+                      src="public\image\color\Group 378 (7).png"
                       id="contact-icon"
                       />
                     <img
                       class="android-large-20-child3"
                       alt=""
-                      src="public\images\color\Group 378 (8).png"
+                      src="public\image\color\Group 378 (8).png"
                       id="contact-icon"
                       />
                   </div>
-                  <p id="contact-text">praveen93@gmail.com</p>
+                  <p id="contact-text" class="gmail">praveen93@gmail.com</p>
                 </div>
                 <div id="contact" class="d-flex mt-3">
                   <div id="big-image8">
                     <img
                       class="android-large-20-child3"
                       alt=""
-                      src="public\images\color\Group 602.png"
+                      src="public\image\color\Group 602.png"
                       id="contact-icon"
                       />
                     <img
                       class="android-large-20-child3"
                       alt=""
-                      src="public\images\color\Group 606.png"
+                      src="public\image\color\Group 606.png"
                       id="contact-icon"
                       />
                     <img
                       class="android-large-20-child3"
                       alt=""
-                      src="public\images\color\Group 599.png"
+                      src="public\image\color\Group 599.png"
                       id="contact-icon"
                       />
                     <img
                       class="android-large-20-child3"
                       alt=""
-                      src="public\images\color\Group 598.png"
+                      src="public\image\color\Group 598.png"
                       id="contact-icon"
                       />
                     <img
                       class="android-large-20-child3"
                       alt=""
-                      src="public\images\color\Group 604.png"
+                      src="public\image\color\Group 604.png"
                       id="contact-icon"
                       />
                     <img
                       class="android-large-20-child3"
                       alt=""
-                      src="public\images\color\Group 605.png"
+                      src="public\image\color\Group 605.png"
                       id="contact-icon"
                       />
                     <img
                       class="android-large-20-child3"
                       alt=""
-                      src="public\images\color\Group 597.png"
+                      src="public\image\color\Group 597.png"
                       id="contact-icon"
                       />
                     <img
                       class="android-large-20-child3"
                       alt=""
-                      src="public\images\color\Group 602.png"
+                      src="public\image\color\Group 602.png"
                       id="contact-icon"
                       />
                     <img
                       class="android-large-20-child3"
                       alt=""
-                      src="public\images\color\Group 600.png"
+                      src="public\image\color\Group 600.png"
                       id="contact-icon"
                       />
                     <img
                       class="android-large-20-child3"
                       alt=""
-                      src="public\images\color\Group 603.png"
+                      src="public\image\color\Group 603.png"
                       id="contact-icon"
                       />
                     <img
                       class="android-large-20-child3"
                       alt=""
-                      src="public\images\color\Group 601.png"
+                      src="public\image\color\Group 601.png"
                       id="contact-icon"
                       />
                   </div>
@@ -294,67 +300,67 @@
                     <img
                       class="android-large-20-child7"
                       alt=""
-                      src="public\images\settings\Group 229.png"
+                      src="public\image\settings\Group 229.png"
                       id="contact-icon"
                       />
                     <img
                       class="android-large-20-child3"
                       alt=""
-                      src="public\images\color\Group 454 (1).png"
+                      src="public\image\color\Group 454 (1).png"
                       id="contact-icon"
                       />
                     <img
                       class="android-large-20-child3"
                       alt=""
-                      src="public\images\color\Group 233 (1).png"
+                      src="public\image\color\Group 233 (1).png"
                       id="contact-icon"
                       />
                     <img
                       class="android-large-20-child3"
                       alt=""
-                      src="public\images\color\Group 233 (2).png"
+                      src="public\image\color\Group 233 (2).png"
                       id="contact-icon"
                       />
                     <img
                       class="android-large-20-child3"
                       alt=""
-                      src="public\images\color\Group 233 (3).png"
+                      src="public\image\color\Group 233 (3).png"
                       id="contact-icon"
                       />
                     <img
                       class="android-large-20-child3"
                       alt=""
-                      src="public\images\color\Group 233 (4).png"
+                      src="public\image\color\Group 233 (4).png"
                       id="contact-icon"
                       />
                     <img
                       class="android-large-20-child3"
                       alt=""
-                      src="public\images\color\Group 233 (5).png"
+                      src="public\image\color\Group 233 (5).png"
                       id="contact-icon"
                       />
                     <img
                       class="android-large-20-child3"
                       alt=""
-                      src="public\images\color\Group 378.png"
+                      src="public\image\color\Group 378.png"
                       id="contact-icon"
                       />
                     <img
                       class="android-large-20-child3"
                       alt=""
-                      src="public\images\color\Group 233 (6).png"
+                      src="public\image\color\Group 233 (6).png"
                       id="contact-icon"
                       />
                     <img
                       class="android-large-20-child3"
                       alt=""
-                      src="public\images\color\Group 233 (7).png"
+                      src="public\image\color\Group 233 (7).png"
                       id="contact-icon"
                       />
                     <img
                       class="android-large-20-child3"
                       alt=""
-                      src="public\images\color\Group 233 (8).png"
+                      src="public\image\color\Group 233 (8).png"
                       id="contact-icon"
                       />
                   </div>
@@ -362,18 +368,18 @@
                 </div>
               </div>
             </div>
-            <div class="rectangle-div ms-5 mt-4">
+            <div class="rectangle-div ms-3 mt-4">
               <div class="row ">
                 <form action="" id="web">
                   <div  id="Menu1" style="display: none;padding: 0px 33px;">
                     <div>
                       <img
-                        src="public\images\edit\material-symbols_menu.png"
+                        src="public\image\edit\material-symbols_menu.png"
                         alt=""
                         class="menu-icon  mt-3"
                         />
                       <img
-                        src="public\images\settings\flag.png"
+                        src="public\image\settings\flag.png"
                         alt=""
                         class="e-icon mt-3"
                         />
@@ -392,7 +398,7 @@
                   <div id="Menu2" style="display: none;padding: 0px 33px;">
                     <div>
                       <img
-                        src="public\images\edit\material-symbols_menu.png"
+                        src="public\image\edit\material-symbols_menu.png"
                         alt=""
                         class="menu-icon  mt-3"
                         />
@@ -423,12 +429,12 @@
                   <div id="Menu3" style="display: none;padding: 0px 33px;">
                     <div>
                       <img
-                        src="public\images\edit\material-symbols_menu.png"
+                        src="public\image\edit\material-symbols_menu.png"
                         alt=""
                         class="menu-icon mt-3"
                         />
                       <img
-                        src="public\images\edit\eva_email-outline.png"
+                        src="public\image\edit\eva_email-outline.png"
                         alt=""
                         class="e-icon mt-3"
                         />
@@ -447,12 +453,12 @@
                   <div id="Menu4" style="display: none;padding: 0px 33px;">
                     <div>
                       <img
-                        src="public\images\edit\material-symbols_menu.png"
+                        src="public\image\edit\material-symbols_menu.png"
                         alt=""
                         class="menu-icon mt-3"
                         />
                       <img
-                        src="public\images\edit\pin.png"
+                        src="public\image\edit\pin.png"
                         alt=""
                         class="e-icon mt-3"
                         />
@@ -464,12 +470,12 @@
                   <div id="Menu5" style="display: none;padding: 0px 33px;">
                     <div>
                       <img
-                        src="public\images\edit\material-symbols_menu.png"
+                        src="public\image\edit\material-symbols_menu.png"
                         alt=""
                         class="menu-icon mt-3"
                         />
                       <img
-                        src="public\images\edit\link.png"
+                        src="public\image\edit\link.png"
                         alt=""
                         class="e-icon mt-3"
                         />
@@ -484,12 +490,12 @@
                   <div id="Menu6" style="display: none;padding: 0px 33px;">
                     <div>
                       <img
-                        src="public\images\edit\material-symbols_menu.png"
+                        src="public\image\edit\material-symbols_menu.png"
                         alt=""
                         class="menu-icon mt-3"
                         />
                       <img
-                        src="public\images\edit\mdi_instagram (1).png"
+                        src="public\image\edit\mdi_instagram (1).png"
                         alt=""
                         class="e-icon mt-3"
                         />
@@ -504,12 +510,12 @@
                   <div id="Menu7" style="display: none;padding: 0px 33px;">
                     <div>
                       <img
-                        src="public\images\edit\material-symbols_menu.png"
+                        src="public\image\edit\material-symbols_menu.png"
                         alt=""
                         class="menu-icon mt-3"
                         />
                       <img
-                        src="public\images\edit\twitter (1).png"
+                        src="public\image\edit\twitter (1).png"
                         alt=""
                         class="e-icon mt-3"
                         />
@@ -524,12 +530,12 @@
                   <div id="Menu8" style="display: none;padding: 0px 33px;">
                     <div>
                       <img
-                        src="public\images\edit\material-symbols_menu.png"
+                        src="public\image\edit\material-symbols_menu.png"
                         alt=""
                         class="menu-icon mt-3"
                         />
                       <img
-                        src="public\images\edit\bi_facebook (1).png"
+                        src="public\image\edit\bi_facebook (1).png"
                         alt=""
                         class="e-icon mt-3"
                         />
@@ -544,12 +550,12 @@
                   <div id="Menu9" style="display: none;padding: 0px 33px;">
                     <div>
                       <img
-                        src="public\images\edit\material-symbols_menu.png"
+                        src="public\image\edit\material-symbols_menu.png"
                         alt=""
                         class="menu-icon mt-3"
                         />
                       <img
-                        src="public\images\edit\whatsapp.png"
+                        src="public\image\edit\whatsapp.png"
                         alt=""
                         class="e-icon mt-3"
                         />
@@ -564,12 +570,12 @@
                   <div id="Menu10" style="display: none;padding: 0px 33px;">
                     <div>
                       <img
-                        src="public\images\edit\material-symbols_menu.png"
+                        src="public\image\edit\material-symbols_menu.png"
                         alt=""
                         class="menu-icon mt-3"
                         />
                       <img
-                        src="public\images\edit\telegram.png"
+                        src="public\image\edit\telegram.png"
                         alt=""
                         class="e-icon mt-3"
                         />
@@ -584,12 +590,12 @@
                   <div id="Menu11" style="display: none;padding: 0px 33px;">
                     <div>
                       <img
-                        src="public\images\edit\material-symbols_menu.png"
+                        src="public\image\edit\material-symbols_menu.png"
                         alt=""
                         class="menu-icon mt-3"
                         />
                       <img
-                        src="public\images\edit\ri_youtube-line.png"
+                        src="public\image\edit\ri_youtube-line.png"
                         alt=""
                         class="e-icon mt-3"
                         />
@@ -604,12 +610,12 @@
                   <div id="Menu12" style="display: none;padding: 0px 33px;">
                     <div>
                       <img
-                        src="public\images\edit\material-symbols_menu.png"
+                        src="public\image\edit\material-symbols_menu.png"
                         alt=""
                         class="menu-icon mt-3"
                         />
                       <img
-                        src="public\images\edit\ri_pinterest-fill.png"
+                        src="public\image\edit\ri_pinterest-fill.png"
                         alt=""
                         class="e-icon mt-3"
                         />
@@ -624,12 +630,12 @@
                   <div id="Menu13" style="display: none;padding: 0px 33px;">
                     <div>
                       <img
-                        src="public\images\edit\material-symbols_menu.png"
+                        src="public\image\edit\material-symbols_menu.png"
                         alt=""
                         class="menu-icon mt-3"
                         />
                       <img
-                        src="public\images\edit\mdi_vimeo.png"
+                        src="public\image\edit\mdi_vimeo.png"
                         alt=""
                         class="e-icon mt-3"
                         />
@@ -644,12 +650,12 @@
                   <div id="Menu14" style="display: none;padding: 0px 33px;">
                     <div>
                       <img
-                        src="public\images\edit\material-symbols_menu.png"
+                        src="public\image\edit\material-symbols_menu.png"
                         alt=""
                         class="menu-icon mt-3"
                         />
                       <img
-                        src="public\images\edit\ic_baseline-discord.png"
+                        src="public\image\edit\ic_baseline-discord.png"
                         alt=""
                         class="e-icon mt-3"
                         />
@@ -664,12 +670,12 @@
                   <div id="Menu15" style="display: none;padding: 0px 33px;">
                     <div>
                       <img
-                        src="public\images\edit\material-symbols_menu.png"
+                        src="public\image\edit\material-symbols_menu.png"
                         alt=""
                         class="menu-icon mt-3"
                         />
                       <img
-                        src="public\images\edit\linkedin.png"
+                        src="public\image\edit\linkedin.png"
                         alt=""
                         class="e-icon mt-3"
                         />
@@ -684,12 +690,12 @@
                   <div id="Menu16" style="display: none;padding: 0px 33px;">
                     <div>
                       <img
-                        src="public\images\edit\material-symbols_menu.png"
+                        src="public\image\edit\material-symbols_menu.png"
                         alt=""
                         class="menu-icon mt-3"
                         />
                       <img
-                        src="public\images\edit\github.png"
+                        src="public\image\edit\github.png"
                         alt=""
                         class="e-icon mt-3"
                         />
@@ -704,12 +710,12 @@
                   <div id="Menu17" style="display: none;padding: 0px 33px;">
                     <div>
                       <img
-                        src="public\images\edit\material-symbols_menu.png"
+                        src="public\image\edit\material-symbols_menu.png"
                         alt=""
                         class="menu-icon mt-3"
                         />
                       <img
-                        src="public\images\add\paytm.png"
+                        src="public\image\add\paytm.png"
                         alt=""
                         class="e-icon mt-3"
                         />
@@ -724,7 +730,7 @@
                   <div id="Menu18" style="display: none;padding: 0px 33px;">
                     <div>
                       <img
-                        src="public\images\edit\material-symbols_menu.png"
+                        src="public\image\edit\material-symbols_menu.png"
                         alt=""
                         class="menu-icon mt-3"
                         />
@@ -744,12 +750,12 @@
                   <div id="Menu19" style="display: none;padding: 0px 33px;">
                     <div>
                       <img
-                        src="public\images\edit\material-symbols_menu.png"
+                        src="public\image\edit\material-symbols_menu.png"
                         alt=""
                         class="menu-icon  mt-3"
                         />
                       <img
-                        src="public\images\edit\calendar_747310.png"
+                        src="public\image\edit\calendar_747310.png"
                         alt=""
                         class="e-icon mt-3"
                         />
@@ -764,12 +770,12 @@
                   <div id="Menu20" style="display: none;padding: 0px 33px;">
                     <div>
                       <img
-                        src="public\images\edit\material-symbols_menu.png"
+                        src="public\image\edit\material-symbols_menu.png"
                         alt=""
                         class="menu-icon  mt-3"
                         />
                       <img
-                        src="public\images\edit\social_10091758.png"
+                        src="public\image\edit\social_10091758.png"
                         alt=""
                         class="e-icon mt-3"
                         />
@@ -784,12 +790,12 @@
                   <div id="Menu21" style="display: none;padding: 0px 33px;">
                     <div>
                       <img
-                        src="public\images\edit\material-symbols_menu.png"
+                        src="public\image\edit\material-symbols_menu.png"
                         alt=""
                         class="menu-icon  mt-3"
                         />
                       <img
-                        src="public\images\edit\behance.png"
+                        src="public\image\edit\behance.png"
                         alt=""
                         class="e-icon mt-3"
                         />
@@ -804,12 +810,12 @@
                   <div id="Menu22" style="display: none;padding: 0px 33px;">
                     <div>
                       <img
-                        src="public\images\edit\material-symbols_menu.png"
+                        src="public\image\edit\material-symbols_menu.png"
                         alt=""
                         class="menu-icon  mt-3"
                         />
                       <img
-                        src="public\images\add\dribbble.png"
+                        src="public\image\add\dribbble.png"
                         alt=""
                         class="e-icon mt-3"
                         />
@@ -824,12 +830,12 @@
                   <div id="Menu23" style="display: none;padding: 0px 33px;">
                     <div>
                       <img
-                        src="public\images\edit\material-symbols_menu.png"
+                        src="public\image\edit\material-symbols_menu.png"
                         alt=""
                         class="menu-icon  mt-3"
                         />
                       <img
-                        src="public\images\add\skype.png"
+                        src="public\image\add\skype.png"
                         alt=""
                         class="e-icon mt-3"
                         />
@@ -841,12 +847,12 @@
                   <div id="Menu24" style="display: none;padding: 0px 33px;">
                     <div>
                       <img
-                        src="public\images\edit\material-symbols_menu.png"
+                        src="public\image\edit\material-symbols_menu.png"
                         alt=""
                         class="menu-icon  mt-3"
                         />
                       <img
-                        src="public\images\add\pdf-file.png"
+                        src="public\image\add\pdf-file.png"
                         alt=""
                         class="e-icon mt-3"
                         />
@@ -859,12 +865,12 @@
                   <div id="Menu25" style="display: none;padding: 0px 33px;">
                     <div>
                       <img
-                        src="public\images\edit\material-symbols_menu.png"
+                        src="public\image\edit\material-symbols_menu.png"
                         alt=""
                         class="menu-icon  mt-3"
                         />
                       <img
-                        src="public\images\edit\threads.png"
+                        src="public\image\edit\threads.png"
                         alt=""
                         class="e-icon mt-3"
                         />
@@ -881,15 +887,15 @@
             </div>
           </div>
           <div class="col-xs-12 col-sm-12 col-md-6 col-lg-7">
-            <div class="row ms-xl-2 ms-lg-5 ms-md-2 ms-0" id="label-card">
+            <div class="row ms-xl-2 ms-lg-5 ms-md-3 ms-4 mt-3 mx-2 mt-3" id="label-card">
               <form action="" class="label">
-                <label for="name" class="form-label mt-2 ms-5">Label this Card</label>
+                <label for="name" class="form-label mt-2">Label this Card</label>
                 <input type="text" class="form-control" />
               </form>
             </div>
-            <div class="row ms-xl-2 ms-lg-5 ms-md-2 ms-3 mt-3" id="img-card">
+            <div class="row  ms-xl-2 ms-lg-5 ms-md-3 ms-4 mt-3 mx-2 mt-3" id="img-card">
               <div class="col mt-2">
-                <p id="img-head" class=" ms-5">Add Images</p>
+                <p id="img-head" class="">Add Images</p>
               </div>
               <div class="col mt-3">
                 <button id="change-btn" class="myBtn_multi multis">Change Layout</button>
@@ -910,7 +916,7 @@
                         <div class="multiple-items classic change-all">
                           <div>
                             <img
-                              src="public\images\color\wave-blue.png"
+                              src="public\image\color\wave-blue.png"
                               class="type-sel"
                               alt=""
                               data-type="wave"
@@ -919,7 +925,7 @@
                           </div>
                           <div>
                             <img
-                              src="public\images\color\slop-blue.png"
+                              src="public\image\color\slop-blue.png"
                               class="type-sel"
                               alt=""
                               data-type="slop"
@@ -928,7 +934,7 @@
                           </div>
                           <div>
                             <img
-                              src="public\images\color\hexa-blue.png"
+                              src="public\image\color\hexa-blue.png"
                               class="type-sel"
                               alt=""
                               data-type="hexa"
@@ -937,7 +943,7 @@
                           </div>
                           <div>
                             <img
-                              src="public\images\color\flat-blue.png"
+                              src="public\image\color\flat-blue.png"
                               class="type-sel"
                               alt=""
                               data-type="flat"
@@ -946,7 +952,7 @@
                           </div>
                           <div>
                             <img
-                              src="public\images\color\side-blue.png"
+                              src="public\image\color\side-blue.png"
                               class="type-sel"
                               alt=""
                               data-type="side"
@@ -968,30 +974,26 @@
                   </div>
                 </div>
               </div>
-              <div class="row justify-content-evenly mb-3 mt-3 ">
-                <div
-                  class="col-xs-12 col-sm-12 col-md-2 col-lg-3 card-1 mb-2"
-                  id="change-img"
-                  >
-                  <!-- <i class="bi bi-plus-lg"></i> -->
-                  <a class="modal-button1 plus bi bi-plus-lg" href="#myModal3"> </a>
+              <div class="row justify-content-evenly ms-1 mb-3">
+              <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-3 card-1" id="change-img">
+                <a class="modal-button1 plus bi bi-plus-lg" href="#myModal3">
                   <p id="change-img-head">Company Logo</p>
-                  <div id="myModal3" class="modal-1">
-                    <div class="row justify-content-center">
-                      <div class="col-xs-12 col-md-10 col-lg-4">
-                        <div class="modal-content-1">
-                          <div class="modal-header1">
-                            <span class="close-1">&times;</span>
-                            <div class="add-company-logo">Add profile photo</div>
-                          </div>
-                          <hr class="img">
-                          <div class="modal-body">
-                            <div class="rectangle-div-new">
-                              <div class="drop-your-image-container">
-                                <span>Drop your image here, or </span>
+                </a>
+                <div id="myModal3" class="modal-1">
+                  <div class="row justify-content-center">
+                    <div class="col-xs-12 col-md-10 col-lg-4">
+                      <div class="modal-content-1">
+                        <div class="modal-header1">
+                          <span class="close-1">&times;</span>
+                          <div class="add-company-logo">Add Company Logo</div>
+                        </div>
+                        <hr class="img">
+                        <div class="modal-body">
+                          <div class="rectangle-div-new">
+                            <div class="drop-your-image-container">
+                            <span>Drop your image here, or </span>
                                 <button1 id="img-result">browser</button1>
                                 <div class="support-jpg-jpeg">Support JPG, JPEG & PNG</div>
-                              </div>
                             </div>
                           </div>
                         </div>
@@ -999,45 +1001,45 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 card-1 mb-2 card-1" id="change-img">
-                  <a class="modal-button1 plus bi bi-plus-lg" href="#myModal3"> </a>
-                  <p id="change-img-head">Profile Picture</p>
-                  <div id="myModal3" class="modal-1">
-                    <div class="modal-content-1">
-                      <div class="modal-header1">
-                        <span class="close-1">&times;</span>
-                        <div class="add-company-logo">Add profile photo</div>
-                      </div>
-                      <hr class="img">
-                      <div class="modal-body">
-                        <div class="rectangle-div-new">
-                          <div class="drop-your-image-container">
-                            <span>Drop your image here, or </span>
-                            <button1 id="img-result">browser</button1>
-                            <div class="support-jpg-jpeg">Support JPG, JPEG & PNG</div>
-                          </div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-3 card-1" id="change-img">
+                <a class="modal-button1 plus bi bi-plus-lg" href="#myModal3"> </a>
+                <p id="change-img-head">Profile Image</p>
+                <div id="myModal3" class="modal-1">
+                  <div class="modal-content-1">
+                    <div class="modal-header1">
+                      <span class="close-1">&times;</span>
+                      <div class="add-company-logo">Add profile photo</div>
+                    </div>
+                    <hr class="img">
+                    <div class="modal-body">
+                      <div class="rectangle-div-new">
+                        <div class="drop-your-image-container">
+                          <span>Drop your image here, or </span>
+                          <button1 id="img-result">browser</button1>
+                          <div class="support-jpg-jpeg">Support JPG, JPEG & PNG</div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 card-1 mb-2 card-1" id="change-img">
-                  <a class="modal-button1 plus bi bi-plus-lg" href="#myModal3"> </a>
-                  <p id="change-img-head">Cover Image</p>
-                  <div id="myModal3" class="modal-1">
-                    <div class="modal-content-1">
-                      <div class="modal-header1">
-                        <span class="close-1">&times;</span>
-                        <div class="add-company-logo">Add profile photo</div>
-                      </div>
-                      <hr class="img">
-                      <div class="modal-body">
-                        <div class="rectangle-div-new">
-                          <div class="drop-your-image-container">
-                            <span>Drop your image here, or </span>
-                            <button1 id="img-result">browser</button1>
-                            <div class="support-jpg-jpeg">Support JPG, JPEG & PNG</div>
-                          </div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-3 card-1" id="change-img">
+                <a class="modal-button1 plus bi bi-plus-lg" href="#myModal3"> </a>
+                <p id="change-img-head">Cover Image</p>
+                <div id="myModal3" class="modal-1">
+                  <div class="modal-content-1">
+                    <div class="modal-header1">
+                      <span class="close-1">&times;</span>
+                      <div class="add-company-logo">Add Cover Image</div>
+                    </div>
+                    <hr class="img">
+                    <div class="modal-body">
+                      <div class="rectangle-div-new">
+                        <div class="drop-your-image-container">
+                          <span>Drop your image here, or </span>
+                          <button1 id="img-result">browser</button1>
+                          <div class="support-jpg-jpeg">Support JPG, JPEG & PNG</div>
                         </div>
                       </div>
                     </div>
@@ -1045,90 +1047,92 @@
                 </div>
               </div>
             </div>
-            <div class="row justify-conter-center ms-xl-2 ms-lg-5 ms-md-2 ms-3 mt-3" id="color-box">
-              <p id="img-head" class="mt-2 ms-5">Colour</p>
-              <div id="switcher" class="space classic small-images mb-3 mt-3">
-                <img src="public\images\color\Ellipse 698.png" alt="" class="ms-2" style="width: 35px;">
+            </div>
+            <div class="row justify-conter-center  ms-xl-2 ms-lg-5 ms-md-3 ms-4 mt-3 mx-2 mt-3" id="color-box">
+              <p id="img-head" class="mt-2">Colour</p>
+              <!-- <div id="switcher" class="space classic small-images mb-3 mt-3"> -->
+              <div id="switcher" class="space classic small-images mb-3 mt-3 d-flex" style="overflow-x: scroll; overflow-y: hidden; padding-left: 0%">
+                <img src="public\image\color\Ellipse 698.png" alt="" class="ms-5 mt-2" style="width: 37px;height: 37px;">
                 <img
-                  src="public\images\add\Property 1=Default (3).png"
+                  src="public\image\add\Property 1=Default (3).png"
                   data-color="rgb(246 223 231)"
-                  class="bg-change bg-change1 code space"
+                  class="bg-change bg-change1 code space ms-3"
                   data-color1="#d06189"
                   data-clr="pink"
                   />
                 <img
-                  src="public\images\add\Property 1=Default (4).png"
+                  src="public\image\add\Property 1=Default (4).png"
                   data-color="#f0e0e0"
-                  class="bg-change bg-change1 code space"
+                  class="bg-change bg-change1 code space ms-3"
                   data-color1="#c42626"
                   data-clr="red"
                   />
                 <img
-                  src="public\images\add\Property 1=Default (7).png"
+                  src="public\image\add\Property 1=Default (7).png"
                   data-color="#f4e2d6"
-                  class="bg-change bg-change1 code space"
+                  class="bg-change bg-change1 code space ms-3"
                   data-color1="#9d6f4e"
                   data-clr="brown"
                   />
                 <img
-                  src="public\images\add\Property 1=Default (5).png"
+                  src="public\image\add\Property 1=Default (5).png"
                   data-color="#f2e4bf"
-                  class="bg-change bg-change1 code space"
+                  class="bg-change bg-change1 code space ms-3"
                   data-color1="#c0962b"
                   data-clr="yellow"
                   />
                 <img
-                  src="public\images\add\Property 1=Default (8).png"
+                  src="public\image\add\Property 1=Default (8).png"
                   data-color="#c5e7c4"
-                  class="bg-change bg-change1 code space"
+                  class="bg-change bg-change1 code space ms-3"
                   data-color1="#32c22f"
                   data-clr="green"
                   />
                 <img
-                  src="public\images\add\Property 1=Default (9).png"
+                  src="public\image\add\Property 1=Default (9).png"
                   data-color="#c2dcdc"
-                  class="bg-change bg-change1 code space"
+                  class="bg-change bg-change1 code space ms-3"
                   data-color1="#1cc2c2"
                   data-clr="lightblue"
                   />
                 <img
-                  src="public\images\add\Property 1=Default (6).png"
+                  src="public\image\add\Property 1=Default (6).png"
                   data-color="#e1e7ec"
-                  class="bg-change bg-change1 code space"
+                  class="bg-change bg-change1 code space ms-3"
                   data-color1="#418ace"
                   data-clr="blue"
                   />
                 <img
-                  src="public\images\add\Property 1=Default (2).png"
+                  src="public\image\add\Property 1=Default (2).png"
                   data-color="#e1e7ec"
-                  class="bg-change bg-change1 code space"
+                  class="bg-change bg-change1 code space ms-3"
                   data-color1="#418ace"
                   data-clr="deepblue"
                   />
                 <img
-                  src="public\images\add\Property 1=Default.png"
+                  src="public\image\add\Property 1=Default.png"
                   data-color="#ede0f2"
-                  class="bg-change bg-change1 code space"
+                  class="bg-change bg-change1 code space ms-3"
                   data-color1="#b440dd"
                   data-clr="purple"
                   />
                 <img
-                  src="public\images\add\Property 1=Default (1).png"
+                  src="public\image\add\Property 1=Default (1).png"
                   data-color="#d7d4d8"
-                  class="bg-change bg-change1 code space"
+                  class="bg-change bg-change1 code space ms-3"
                   data-color1="#2b2b2b"
                   data-clr="black"
                   />
               </div>
             </div>
-            <div class="row justify-conter-center ms-xl-2 ms-lg-5 ms-md-2 ms-0 mt-3" id="label-card1" style="padding: 0px 26px;">
-              <p id="img-head" class="mt-3 ms-5">Add Your Details</p>
+            <div class="row justify-conter-center  ms-xl-2 ms-lg-5 ms-md-3 ms-4 mt-3 mx-2 mt-3" id="label-card1" style="padding: 0px 7px;">
+              <p id="img-head" class="mt-3">Add Your Details</p>
               <button class="myBtn_multi multi card  personal ">
-                <p class="ms-5 mt-2 my-4" >Personal Info</p>
+                <p class="ms-3 mt-2 my-4" >Personal Info</p>
                 <i class="bi bi-plus-lg plus plus1"></i>
               </button>
               <button class="myBtn_multi multi card personal mt-3 mb-3">
-                <p class="ms-5 mt-2 my-4" >Affilation</p>
+                <p class="ms-3 mt-2 my-4" >Affilation</p>
                 <i class="bi bi-plus-lg plus plus1"></i>
               </button>
               <div class="container">
@@ -1138,7 +1142,7 @@
                     <div class="modal-content personal  res mt-5 " >
                       <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-6 ">
-                          <img src="public\images\settings\istockphoto-1036730106-612x612.jpg" alt="" class="bluei">
+                          <img src="public\image\settings\istockphoto-1036730106-612x612.jpg" alt="" class="bluei">
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-6 mb-2">
                           <div class="close close_multi multiple">×</div>
@@ -1172,7 +1176,7 @@
                     <div class="modal-content personal  res mt-5 " >
                       <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-6 ">
-                          <img src="public\images\settings\preview.png" alt="" class="bluei">
+                          <img src="public\image\settings\preview.png" alt="" class="bluei">
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-6 mb-2">
                           <div class="close close_multi multiple">×</div>
@@ -1200,154 +1204,157 @@
                 </div>
               </div>
             </div>
-            <div class="row justify-conter-center ms-xl-2 ms-lg-5 ms-md-2 ms-3 mt-3" id="label-card1">
-              <p class="mt-3 ms-5">Add More Infomation</p>
-              <p class="ms-5">General</p>
-              <div class="row justify-content-evenly mt-3 ms-3">
-                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 card-1 ms-2 mb-3" id="change-img1">
+            <div class="row justify-conter-center  ms-xl-2 ms-lg-5 ms-md-3 ms-4 mt-3 mx-2 mt-3" id="label-card1">
+              <p class="mt-3">Add More Infomation</p>
+              <p class="">General</p>
+              <div class="row justify-content-evenly mt-3">
+                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3 card-1" id="change-img1">
                   <a href="#web" onclick="toggleVisibility('Menu1');" class="color">
-                    <img class="group-icon" alt="" src="public\images\add\gg_website.png"/>
+                    <img class="group-icon" alt="" src="public\image\add\gg_website.png"/>
                     <h6 class="mt-3">Website</h6>
                   </a>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 card-1  ms-2" id="change-img1">
+                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3 card-1" id="change-img1">
                   <a href="#web" onclick="toggleVisibility('Menu2');" class="color">
-                    <img class="group-icon" alt="" src="public\images\add\ri_phone-fill.png"/>
+                    <img class="group-icon" alt="" src="public\image\add\ri_phone-fill.png"/>
                     <h6 class="mt-3">Phone</h6>
                   </a>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 card-1  ms-2 mb-3" id="change-img1">
+                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3 card-1" id="change-img1">
                   <a href="#web" onclick="toggleVisibility('Menu3');" class="color">
-                    <img class="group-icon" alt="" src="public\images\add\eva_email-outline.png"/>
+                    <img class="group-icon" alt="" src="public\image\add\eva_email-outline.png"/>
                     <h6 class="mt-3">E-mail</h6>
                   </a>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 card-1  ms-2" id="change-img1">
+                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3 card-1" id="change-img1">
                   <a href="#web" onclick="toggleVisibility('Menu4');" class="color">
-                    <img class="group-icon" alt="" src="public\images\add\mdi_location.png"/>
+                    <img class="group-icon" alt="" src="public\image\add\mdi_location.png"/>
                     <h6 class="mt-3">Address</h6>
                   </a>
                 </div>
-                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 card-1  ms-2 mb-3"  id="change-img1">
+                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3 card-1 mb-4"  id="change-img1">
                   <a href="#web" onclick="toggleVisibility('Menu5');" class="color">
-                    <img class="group-icon" alt="" src="public\images\add\ph_link-bold.png"/>
+                    <img class="group-icon" alt="" src="public\image\add\ph_link-bold.png"/>
                     <h6 class="mt-3">Link</h6>
                   </a>
                 </div>
               </div>
             </div>
-            <div class="row justify-conter-center ms-xl-2 ms-lg-5 ms-md-2 ms-2 mt-3" id="label-card1">
-              <p class="mt-3 ms-5">Social Links</p>
-              <h6 class="ms-5">Add a link to let people connect with you</h6>
-              <div class="row mt-3 ms-5 ">
-                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3   ms-2 mb-3" id="change-img2">
-                  <a href="#web" onclick="toggleVisibility('Menu6');">
-                    <img src="public\images\add\Frame 1405.png" alt="">
-                  </a>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3   ms-2 mb-3" id="change-img2">
-                  <a href="#web" onclick="toggleVisibility('Menu7');">
-                    <img src="public\images\add\Frame 1415.png" alt="">
-                  </a>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3   ms-2 mb-3" id="change-img2">
-                  <a href="#web" onclick="toggleVisibility('Menu8');">
-                    <img src="public\images\add\Frame 1406.png" alt="">
-                  </a>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3   ms-2 mb-3" id="change-img2">
-                  <a href="#web" onclick="toggleVisibility('Menu9');">
-                    <img src="public\images\add\Frame 1417.png" alt="">
-                  </a>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3   ms-2 mb-3" id="change-img2">
-                  <a href="#web" onclick="toggleVisibility('Menu10');">
-                    <img src="public\images\add\Frame 1416.png" alt="">
-                  </a>
-                </div>
-              </div>
-              <div class="row ms-5">
-                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3   ms-2 mb-3" id="change-img2">
-                  <a href="#web" onclick="toggleVisibility('Menu11');">
-                    <img src="public\images\add\Frame 1418.png" alt="">
-                  </a>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3   ms-2 mb-3" id="change-img2">
-                  <a href="#web" onclick="toggleVisibility('Menu12');">
-                    <img src="public\images\add\Frame 1407.png" alt="">
-                  </a>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3   ms-2 mb-3" id="change-img2">
-                  <a href="#web" onclick="toggleVisibility('Menu13');">
-                    <img src="public\images\add\Frame 1408.png" alt="">
-                  </a>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3   ms-2 mb-3" id="change-img2">
-                  <a href="#web" onclick="toggleVisibility('Menu14');">
-                    <img src="public\images\add\Frame 1409.png" alt="">
-                  </a>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3   ms-2 mb-3" id="change-img2">
-                  <a href="#web" onclick="toggleVisibility('Menu15');">
-                    <img src="public\images\add\Frame 1413.png" alt="">
-                  </a>
-                </div>
-              </div>
-              <div class="row ms-5">
-                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3   ms-2 mb-3" id="change-img2">
-                  <a href="#web" onclick="toggleVisibility('Menu16');">
-                    <img src="public\images\add\Frame 1421.png" alt="">
-                  </a>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3   ms-2 mb-3" id="change-img2">
-                  <a href="#web" onclick="toggleVisibility('Menu17');">
-                    <img src="public\images\add\Frame 1419.png" alt="">
-                  </a>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3   ms-2 mb-3" id="change-img2">
-                  <a href="#web" onclick="toggleVisibility('Menu18');">
-                    <img src="public\images\add\Frame 1420.png" alt="">
-                  </a>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3   ms-2 mb-3" id="change-img2">
-                  <a href="#web" onclick="toggleVisibility('Menu19');">
-                    <img src="public\images\add\Frame 1422.png" alt="">
-                  </a>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3   ms-2 mb-3" id="change-img2">
-                  <a href="#web" onclick="toggleVisibility('Menu20');">
-                    <img src="public\images\add\Frame 1412.png" alt="">
-                  </a>
-                </div>
-              </div>
-              <div class="row ms-5">
-                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3   ms-2 mb-3" id="change-img2">
-                  <a href="#web" onclick="toggleVisibility('Menu21');">
-                    <img src="public\images\add\Frame 1410.png" alt="">
-                  </a>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3   ms-2 mb-3" id="change-img2">
-                  <a href="#web" onclick="toggleVisibility('Menu22');">
-                    <img src="public\images\add\Frame 1411.png" alt="">
-                  </a>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3   ms-2 mb-3" id="change-img2">
-                  <a href="#web" onclick="toggleVisibility('Menu23');">
-                    <img src="public\images\add\Frame 1414.png" alt="">
-                  </a>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3   ms-2 mb-3" id="change-img2">
-                  <a href="#web" onclick="toggleVisibility('Menu24');">
-                    <img src="public\images\add\Frame 1423.png" alt="">
-                  </a>
-                </div>
-                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3   ms-2 mb-3" id="change-img2">
-                  <a href="#web" onclick="toggleVisibility('Menu25');">
-                    <img src="public\images\add\Frame 1424.png" alt="">
-                  </a>
-                </div>
-              </div>
-            </div>
+            <div class="row ms-xl-2 ms-lg-5 ms-md-3 ms-3 mx-1 mt-3 mb-5" id="social-body">
+                     <p id="add-more" class="mt-3">Social Links</p>
+                     <p id="links-head" class="">Add a link to let people connect with you</p>
+                     <div class="row justify-content-evenly mb-3">
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3" id="links-body">
+                           <a href="#web" onclick="toggleVisibility('Menu7');" >
+                           <img src="public\image\add\insta1.png" alt="insta" id="link-img">
+                           </a>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3" id="links-body">
+                           <a href="#web" onclick="toggleVisibility('Menu8');" >
+                           <img src="public\image\add\Frame 1415.png" alt="insta" id="link-img">
+                           </a>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3" id="links-body">
+                           <a href="#web" onclick="toggleVisibility('Menu9');" >
+                           <img src="public\image\add\Frame 1406.png" alt="insta" id="link-img">
+                           </a>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3" id="links-body">
+                           <a href="#web" onclick="toggleVisibility('Menu10');" >
+                           <img src="public\image\add\Frame 1417.png" alt="insta" id="link-img">
+                           </a>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3" id="links-body">
+                           <a href="#web" onclick="toggleVisibility('Menu11');" >
+                           <img src="public\image\add\Frame 1416.png" alt="insta" id="link-img">
+                           </a>
+                        </div>
+                     </div>
+                     <!-- row-2 -->
+                     <div class="row justify-content-evenly mb-3">
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3" id="links-body">
+                           <a href="#web" onclick="toggleVisibility('Menu12');" >
+                           <img src="public\image\add\Frame 1418.png" alt="insta" id="link-img">
+                           </a>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3" id="links-body">
+                           <a href="#web" onclick="toggleVisibility('Menu13');" >
+                           <img src="public\image\add\Frame 1407.png" alt="insta" id="link-img">
+                           </a>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3" id="links-body">
+                           <a href="#web" onclick="toggleVisibility('Menu14');" >
+                           <img src="public\image\add\Frame 1408.png" alt="insta" id="link-img">
+                           </a>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3" id="links-body">
+                           <a href="#web" onclick="toggleVisibility('Menu15');" >
+                           <img src="public\image\add\Frame 1409.png" alt="insta" id="link-img">
+                           </a>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3" id="links-body">
+                           <a href="#web" onclick="toggleVisibility('Menu16');" >
+                           <img src="public\image\add\Frame 1413.png" alt="insta" id="link-img">
+                           </a>
+                        </div>
+                     </div>
+                     <!-- row-3 -->
+                     <div class="row justify-content-evenly mb-3">
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3" id="links-body">
+                           <a href="#web" onclick="toggleVisibility('Menu17');" >
+                           <img src="public\image\add\Frame 1421.png" alt="insta" id="link-img">
+                           </a>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3" id="links-body">
+                           <a href="#web" onclick="toggleVisibility('Menu18');" >
+                           <img src="public\image\add\Frame 1419.png" alt="insta" id="link-img">
+                           </a>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3" id="links-body">
+                           <a href="#web" onclick="toggleVisibility('Menu19');" >
+                           <img src="public\image\add\Frame 1420.png" alt="insta" id="link-img">
+                           </a>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3" id="links-body">
+                           <a href="#web" onclick="toggleVisibility('Menu20');" >
+                           <img src="public\image\add\Frame 1422.png" alt="insta" id="link-img">
+                           </a>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3" id="links-body">
+                           <a href="#web" onclick="toggleVisibility('Menu21');" >
+                           <img src="public\image\add\Frame 1412.png" alt="insta" id="link-img">
+                           </a>
+                        </div>
+                     </div>
+                     <!-- row-4 -->
+                     <div class="row justify-content-evenly mb-3">
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3" id="links-body">
+                           <a href="#web" onclick="toggleVisibility('Menu22');" >
+                           <img src="public\image\add\Frame 1410.png" alt="insta" id="link-img">
+                           </a>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3" id="links-body">
+                           <a href="#web" onclick="toggleVisibility('Menu23');" >
+                           <img src="public\image\add\Frame 1411.png" alt="insta" id="link-img">
+                           </a>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3" id="links-body">
+                           <a href="#web" onclick="toggleVisibility('Menu24');" >
+                           <img src="public\image\add\Frame 1414.png" alt="insta" id="link-img">
+                           </a>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3" id="links-body">
+                           <a href="#web" onclick="toggleVisibility('Menu25');" >
+                           <img src="public\image\add\Frame 1423.png" alt="insta" id="link-img">
+                           </a>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-3 mt-lg-3 mt-md-3 mt-3" id="links-body">
+                           <a href="#web" onclick="toggleVisibility('Menu26');" >
+                           <img src="public\image\add\Frame 1424.png" alt="insta" id="link-img">
+                           </a>
+                        </div>
+                     </div>
+                  </div>
           </div>
         </div>
       </div>
@@ -1458,30 +1465,46 @@
        }
 
 
-        let sidebar = document.querySelector(".sidebar");
-       let closeBtn = document.querySelector("#btn");
-       let searchBtn = document.querySelector(".bx-search");
 
-       closeBtn.addEventListener("click", () => {
-         sidebar.classList.toggle("open");
-         menuBtnChange(); //calling the function(optional)
-       });
+       (function () {
+         var uploader = document.createElement("input"),
+           image = document.getElementById("img-result");
+         uploader.type = "file";
+         uploader.accept = "image/*";
+         image.onclick = function () {
+           uploader.click();
+         };
+         uploader.onchange = function () {
+           var reader = new FileReader();
+           reader.onload = function (evt) {
+             image.classList.remove("no-image");
+             image.style.backgroundImage = "url(" + evt.target.result + ")";
+             var request = {
+               itemtype: "test 1",
+               brand: "test 2",
+               images: [
+                 {
+                   data: evt.target.result,
+                 },
+               ],
+             };
 
-       searchBtn.addEventListener("click", () => {
-         // Sidebar open when you click on the search iocn
-         sidebar.classList.toggle("open");
-         menuBtnChange(); //calling the function(optional)
-       });
 
-       // following are the code to change sidebar button(optional)
-       function menuBtnChange() {
-         if (sidebar.classList.contains("open")) {
-           closeBtn.classList.replace("bx-menu", "bx-menu-alt-right"); //replacing the iocns class
-         } else {
-           closeBtn.classList.replace("bx-menu-alt-right", "bx-menu"); //replacing the iocns class
-         }
-       }
+             document.querySelector(".show-button").style.display = "block";
+             document.querySelector(".upload-result__content").innerHTML =
+               JSON.stringify(request, null, "  ");
+           };
+           reader.readAsDataURL(uploader.files[0]);
+         };
 
+         document.querySelector(".hide-button").onclick = function () {
+           document.querySelector(".upload-result").style.display = "none";
+         };
+
+         document.querySelector(".show-button").onclick = function () {
+           document.querySelector(".upload-result").style.display = "block";
+         };
+       })();
 
 
 
@@ -1560,47 +1583,31 @@
        };
 
 
-       (function () {
-         var uploader = document.createElement("input"),
-           image = document.getElementById("img-result");
-         uploader.type = "file";
-         uploader.accept = "image/*";
-         image.onclick = function () {
-           uploader.click();
-         };
-         uploader.onchange = function () {
-           var reader = new FileReader();
-           reader.onload = function (evt) {
-             image.classList.remove("no-image");
-             image.style.backgroundImage = "url(" + evt.target.result + ")";
-             var request = {
-               itemtype: "test 1",
-               brand: "test 2",
-               images: [
-                 {
-                   data: evt.target.result,
-                 },
-               ],
-             };
 
 
-             document.querySelector(".show-button").style.display = "block";
-             document.querySelector(".upload-result__content").innerHTML =
-               JSON.stringify(request, null, "  ");
-           };
-           reader.readAsDataURL(uploader.files[0]);
-         };
+       let sidebar = document.querySelector(".sidebar");
+       let closeBtn = document.querySelector("#btn");
+       let searchBtn = document.querySelector(".bx-search");
 
-         document.querySelector(".hide-button").onclick = function () {
-           document.querySelector(".upload-result").style.display = "none";
-         };
+       closeBtn.addEventListener("click", () => {
+         sidebar.classList.toggle("open");
+         menuBtnChange(); //calling the function(optional)
+       });
 
-         document.querySelector(".show-button").onclick = function () {
-           document.querySelector(".upload-result").style.display = "block";
-         };
-       })();
+       searchBtn.addEventListener("click", () => {
+         // Sidebar open when you click on the search iocn
+         sidebar.classList.toggle("open");
+         menuBtnChange(); //calling the function(optional)
+       });
 
-
+       // following are the code to change sidebar button(optional)
+       function menuBtnChange() {
+         if (sidebar.classList.contains("open")) {
+           closeBtn.classList.replace("bx-menu", "bx-menu-alt-right"); //replacing the iocns class
+         } else {
+           closeBtn.classList.replace("bx-menu-alt-right", "bx-menu"); //replacing the iocns class
+         }
+       }
 
 
 

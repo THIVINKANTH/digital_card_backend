@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="resources\css\cards.css" />
 </head>
 <body >
-    <!-- navbar -->
+    <!-- navbar123 -->
     @include('layouts.header')
     <!-- sidebar -->
     @include('layouts.sidebar')

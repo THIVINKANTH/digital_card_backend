@@ -66,21 +66,25 @@ class CardsController extends Controller
     //cards list
     public function cards_list()
     {
-        $id = Auth::user()->id;
-        $list = Cards::where('user_id',$id)->get();
+        $userid = Auth::user()->id;
+        $list = Cards::where('user_id',$userid)->get();
+        $id = $list[0]->id;
+         $name = DB::select("select * from cards where id=?",[$id]);
         // $social =Cards::json_decode(socialmedia,true)['insta'];
         // print_r(Cards::where('user_id',$id)->get());
         // exit;
-        return view('app.cards',compact('list'));
+        return view('app.cards',compact('list','name'));
     }
     //card name
     public function card_type($id)
     {
+        $userid = Auth::user()->id;
+        $list = Cards::where('user_id',$userid)->get();
         //$name = DB::select("select 'photo','card_logo','card_frame','card_background','card_color','first_name','middle_name','last_name','desgination','social_media_links','others' from cards where id=?",[$id]);
         $name = DB::select("select * from cards where id=?",[$id]);
         // print_r($name);
         // exit;
-        return view('app.cards',compact('name'));
+        return view('app.cards',compact('name','list'));
     }
     //edit card
     public function edit_card($id)
